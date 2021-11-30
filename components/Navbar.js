@@ -6,7 +6,7 @@ height: 80px;
 background: #202020;
 color: #fff; 
 display: flex;
-justify-content: space-space-between;
+justify-content: space-between;
 align-items: center;
 `
 
