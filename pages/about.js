@@ -8,9 +8,33 @@ height: 138px;
 background: #202020;
 color: #ffffff; 
 display: flex;
-justify-content: left;
+justify-content: center;
 align-items: stretch;
 `
+const StyledAbout = styled.desc`
+height: 24px;
+background: #202020;
+color: #ffffff; 
+display: flex;
+justify-content: left;
+align-items: center;
+`
+
+const AboutUsCard = () => (
+  <div style={{ color: '#ffffff' }}>
+    <StyledAbout>
+          The Illini Blockchain Club is a joint venture between Berkeley Engineering’s 
+      Sutardja Center for Entrepreneurship and Technology, Blockchain at Berkeley, and the 
+      Haas School of Business. Entrepreneurs can pursue ventures in the blockchain space, 
+      tap into the vast resources of UC Berkeley and Silicon Valley, and receive expert industry 
+      guidance to create high-value blockchain startups.
+
+      ********************Insert description of us here***********************
+    </StyledAbout>
+  </div>
+)
+
+
 
 
 export default function AboutUs() {
@@ -23,8 +47,10 @@ export default function AboutUs() {
         </Head>
 
   
-        <StyledHeader>Welcome to the About Us Page</StyledHeader>       
-  
+        <StyledHeader>Who are we?</StyledHeader>       
+        <AboutUsCard />
+        <StyledHeader>Meet the Team</StyledHeader> 
+        <StyledHeader>Insert Team Component Here </StyledHeader>
       </div>
     )
   }

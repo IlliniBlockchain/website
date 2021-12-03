@@ -12,6 +12,42 @@ justify-content: left;
 align-items: stretch;
 `
 
+const StyledTitle = styled.title`
+height: 42px;
+background: #202020;
+color: #ffffff; 
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
+const StyledBlogDescription = styled.desc`
+height: 24px;
+background: #202020;
+color: #ffffff; 
+display: flex;
+justify-content: left;
+align-items: center;
+`
+
+const ProjectsBitCard = () => (
+  <div style={{ color: '#ffffff' }}>
+    <StyledTitle>Bitcoin</StyledTitle>
+    <StyledBlogDescription>
+      An article breaking down Bitcoin
+    </StyledBlogDescription>
+  </div>
+)
+
+const ProjectsEthCard = () => (
+  <div style={{ color: '#ffffff' }}>
+    <StyledTitle>Ethereum</StyledTitle>
+    <StyledBlogDescription>
+      An article breaking down Ethereum
+    </StyledBlogDescription>
+  </div>
+)
+
 export default function Blog() {
     return (
       <div className={styles.container}>
@@ -22,8 +58,12 @@ export default function Blog() {
         </Head>
 
   
-        <StyledHeader>Welcome to the Blog Page</StyledHeader>       
-  
+        <StyledHeader>Welcome to the Blog Page</StyledHeader>    
+        <div>
+          <ProjectsBitCard />
+          <ProjectsEthCard />
+        </div>   
+        
       </div>
     )
   }

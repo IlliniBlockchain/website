@@ -11,6 +11,28 @@ display: flex;
 justify-content: left;
 align-items: stretch;
 `
+const StyledProjectsDescription = styled.desc`
+height: 24px;
+background: #202020;
+color: #ffffff; 
+display: flex;
+justify-content: left;
+align-items: center;
+`
+
+const ProjectsCard = () => (
+  <div style={{ color: '#ffffff' }}>
+    <StyledProjectsDescription>
+      The Illini NFT Project is a joint venture between UIUC Engineering’s Sutardja Center for 
+      Entrepreneurship and Technology, Blockchain at Berkeley, and the Haas School of Business. 
+      Entrepreneurs can pursue ventures in the blockchain space, tap into the vast resources of 
+      UC Berkeley and Silicon Valley, and receive expert industry guidance to create high-value 
+      blockchain startups.
+
+      ********************Insert description of nft project here***********************
+    </StyledProjectsDescription>
+  </div>
+)
 
 export default function Projects() {
     return (
@@ -22,7 +44,8 @@ export default function Projects() {
         </Head>
   
         <StyledHeader>Welcome to the Projects Page</StyledHeader>       
-  
+        <ProjectsCard />
+
       </div>
     )
   }
