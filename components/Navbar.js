@@ -2,18 +2,49 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const Nav = styled.nav`
+padding-left: 85px;
 height: 80px;
 background: #202020;
 color: #fff; 
 display: flex;
 justify-content: space-between;
 align-items: center;
+font-weight: bold;
 `
 
 const StyledLink = styled.a`
-padding: 0rem 2rem;
+padding: 2rem;
+margin-right: 75px;
+padding-top: 10px;
+padding-bottom: 10px;
+  color: white;
+  border-radius: 50px;
+  &:hover {
+    color: black;
+    background: white;
+  }
+  font-weight: bold;
 `
 
+const StyledLinkTwo = styled.a`
+margin-top: 10px;
+margin-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #e84a27;
+  border-radius: 50px;
+  &:hover {
+    color: black;
+    background: white;
+  }
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+`
 
 const Navbar = () => {
     return (
@@ -34,7 +65,7 @@ const Navbar = () => {
             </div>
             <div>
             <Link href='/contact' passHref>
-                <StyledLink>Contact Us</StyledLink>
+                <StyledLinkTwo> Contact Us</StyledLinkTwo>
             </Link>
             </div>
         </Nav>

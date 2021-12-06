@@ -1,43 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledTitle = styled.title`
-height: 48px;
-background: #202020;
-color: #ffffff; 
-display: flex;
-justify-content: center;
-align-items: center;
-`
-
-const StyledDescription = styled.desc`
-height: 24px;
-background: #202020;
+const StyledTitle = styled.h2`
+padding-left: 110px;
+padding-bottom: 0px;
+padding-top: 25px;
+margin-bottom: 0px;
 color: #ffffff; 
 display: flex;
 justify-content: left;
-align-items: center;
+font-size: 48px;
 `
 
-const SubscribeButton = styled.button<ButtonComponentProps>`
-  padding: 5px 12px;
-  color: white;
-  font-size: 36px;
-  font-weight: 700;
-  background-color: ${{color: '#202020'}};
-  border: 0px;
-  border-radius: 3px;
-  appearance: none;
-  cursor: pointer;
-`;
+const StyledDescription = styled.h3`
+padding-left: 110px;
+padding-bottom: 40px;
+margin-top: 0px;
+color: #ffffff; 
+display: flex;
+justify-content: left;
+font-size: 24px;
+font-weight: 400;
+`
+
+const CustomNewsletterBanner = styled.div`
+background-color: #e84a27;
+`
+
+// const SubscribeButton = styled.button<ButtonComponentProps>`
+//   padding: 5px 12px;
+//   color: white;
+//   font-size: 36px;
+//   font-weight: 700;
+//   background-color: ${{color: '#202020'}};
+//   border: 0px;
+//   border-radius: 3px;
+//   appearance: none;
+//   cursor: pointer;
+// `;
 
 const NewsletterBanner = () => (
-    <div style={{ color: '#e84a27' }}>
+    <CustomNewsletterBanner>
       <StyledTitle>Sign up for our newsletter!</StyledTitle>
-      <div><StyledDescription>Receive the latest updates on everything Illini Blockchain</StyledDescription></div>
-      
-      <SubscribeButton />
-    </div>
+      <StyledDescription>Receive the latest updates on everything Illini Blockchain</StyledDescription>
+    </CustomNewsletterBanner>
   )
   
   

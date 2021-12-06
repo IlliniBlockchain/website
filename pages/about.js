@@ -11,7 +11,7 @@ display: flex;
 justify-content: center;
 align-items: stretch;
 `
-const StyledAbout = styled.desc`
+const StyledAbout = styled.h3`
 height: 24px;
 background: #202020;
 color: #ffffff; 

@@ -2,34 +2,44 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledTitle = styled.title`
-height: 42px;
-background: #202020;
+padding-top: 25px;
 color: #ffffff; 
 display: flex;
 justify-content: center;
 align-items: center;
+font-size: 42px;
+font-weight: bold;
 `
 
-const StyledDescription = styled.desc`
-height: 24px;
-background: #202020;
+const StyledDescription = styled.h4`
+padding-left: 50px;
+padding-right: 50px;
 color: #ffffff; 
 display: flex;
-justify-content: left;
-align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: lighter;
 `
 
-const ProjectsCard = () => (
-  <div style={{ color: '#002855' }}>
+const StyledSection = styled.div`
+height: 300pt;
+width: 300pt;
+margin-right: 100px;
+background-color: #e84a27;
+border-radius: 25px;
+float: left;
+`
+
+const EducationCard = () => (
+  <StyledSection>
     <StyledTitle>Projects</StyledTitle>
     <StyledDescription>
-        By building blockchain projects with VC firms, organizations, 
-        and blockchain platforms Illini Blockchain provides members 
-        with the unique opportunity to gain real world experience
-        working at the forefront of a revolutionary industry
+      Through a collection of medium articles, twitter posts, 
+      notion pages, and educational blockchain events 
+      Illini Blockchain educates people of all skill levels.
     </StyledDescription>
-  </div>
+  </StyledSection>
 )
 
 
-export default ProjectsCard
+export default EducationCard
