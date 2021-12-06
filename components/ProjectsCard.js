@@ -30,7 +30,7 @@ border-radius: 25px;
 float: left;
 `
 
-const EducationCard = () => (
+const ProjectsCard = () => (
   <StyledSection>
     <StyledTitle>Projects</StyledTitle>
     <StyledDescription>
@@ -42,4 +42,4 @@ const EducationCard = () => (
 )
 
 
-export default EducationCard
+export default ProjectsCard

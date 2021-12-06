@@ -8,20 +8,10 @@ height: 138px;
 background: #202020;
 color: #ffffff; 
 display: flex;
-justify-content: left;
+justify-content: center;
 align-items: stretch;
 `
-
-const StyledTitle = styled.title`
-height: 42px;
-background: #202020;
-color: #ffffff; 
-display: flex;
-justify-content: center;
-align-items: center;
-`
-
-const StyledBlogDescription = styled.desc`
+const StyledAbout = styled.h3`
 height: 24px;
 background: #202020;
 color: #ffffff; 
@@ -30,25 +20,24 @@ justify-content: left;
 align-items: center;
 `
 
-const ProjectsBitCard = () => (
+const BlogDescriptionCard = () => (
   <div style={{ color: '#ffffff' }}>
-    <StyledTitle>Bitcoin</StyledTitle>
-    <StyledBlogDescription>
-      An article breaking down Bitcoin
-    </StyledBlogDescription>
+    <StyledAbout>
+          The Illini Blockchain Club is a joint venture between Berkeley Engineering’s 
+      Sutardja Center for Entrepreneurship and Technology, Blockchain at Berkeley, and the 
+      Haas School of Business. Entrepreneurs can pursue ventures in the blockchain space, 
+      tap into the vast resources of UC Berkeley and Silicon Valley, and receive expert industry 
+      guidance to create high-value blockchain startups.
+
+      ********************Insert description of us here***********************
+    </StyledAbout>
   </div>
 )
 
-const ProjectsEthCard = () => (
-  <div style={{ color: '#ffffff' }}>
-    <StyledTitle>Ethereum</StyledTitle>
-    <StyledBlogDescription>
-      An article breaking down Ethereum
-    </StyledBlogDescription>
-  </div>
-)
 
-export default function Blog() {
+
+
+export default function Blogs() {
     return (
       <div className={styles.container}>
         <Head>t
@@ -58,12 +47,8 @@ export default function Blog() {
         </Head>
 
   
-        <StyledHeader>Welcome to the Blog Page</StyledHeader>    
-        <div>
-          <ProjectsBitCard />
-          <ProjectsEthCard />
-        </div>   
-        
+        <StyledHeader>Blogs</StyledHeader>       
+        <BlogDescriptionCard />
       </div>
     )
   }
