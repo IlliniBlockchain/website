@@ -30,7 +30,7 @@ margin-bottom: 125px;
 color: #ffffff;  
 display: flex;
 justify-content: left;
-font-size: 48px;
+font-size: 36px;
 font-weight: 400;
 `
 
