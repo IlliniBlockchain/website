@@ -1,16 +1,8 @@
 import Head from 'next/head'
-import Navbar from '../components/nav'
 import styles from '../styles/Home.module.css'
-import styled from 'styled-components';
-
-const StyledHeader = styled.h1`
-height: 138px;
-background: #202020;
-color: #ffffff; 
-display: flex;
-justify-content: left;
-align-items: stretch;
-`
+import {
+  StyledHeader
+} from '../components/shared-styled'
 
 export default function ContactUs() {
     return (
@@ -21,7 +13,6 @@ export default function ContactUs() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-  
         <StyledHeader>Welcome to the Contact Us Page</StyledHeader>       
   
       </div>

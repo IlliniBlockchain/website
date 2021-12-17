@@ -2,40 +2,10 @@ import Head from 'next/head'
 import Navbar from '../components/nav'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components';
-
-const StyledHeader = styled.h1`
-height: 138px;
-background: #202020;
-color: #ffffff; 
-display: flex;
-justify-content: center;
-align-items: stretch;
-`
-const StyledAbout = styled.h3`
-height: 24px;
-background: #202020;
-color: #ffffff; 
-display: flex;
-justify-content: left;
-align-items: center;
-`
-
-const AboutUsCard = () => (
-  <div style={{ color: '#ffffff' }}>
-    <StyledAbout>
-          The Illini Blockchain Club is a joint venture between Berkeley Engineering’s 
-      Sutardja Center for Entrepreneurship and Technology, Blockchain at Berkeley, and the 
-      Haas School of Business. Entrepreneurs can pursue ventures in the blockchain space, 
-      tap into the vast resources of UC Berkeley and Silicon Valley, and receive expert industry 
-      guidance to create high-value blockchain startups.
-
-      ********************Insert description of us here***********************
-    </StyledAbout>
-  </div>
-)
-
-
-
+import {
+  StyledHeader,
+  StyledAbout
+} from '../components/shared-styled'
 
 export default function AboutUs() {
     return (
@@ -46,11 +16,23 @@ export default function AboutUs() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-  
         <StyledHeader>Who are we?</StyledHeader>       
-        <AboutUsCard />
+
+        <div style={{ color: '#ffffff' }}>
+          <StyledAbout>
+                The Illini Blockchain Club is a joint venture between Berkeley Engineering’s 
+            Sutardja Center for Entrepreneurship and Technology, Blockchain at Berkeley, and the 
+            Haas School of Business. Entrepreneurs can pursue ventures in the blockchain space, 
+            tap into the vast resources of UC Berkeley and Silicon Valley, and receive expert industry 
+            guidance to create high-value blockchain startups.
+
+            ********************Insert description of us here***********************
+          </StyledAbout>
+        </div>
+
         <StyledHeader>Meet the Team</StyledHeader> 
         <StyledHeader>Insert Team Component Here </StyledHeader>
+
       </div>
     )
   }
