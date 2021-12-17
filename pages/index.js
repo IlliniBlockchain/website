@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/nav'
 import styles from '../styles/Home.module.css'
 import styled from "styled-components"
-import EducationCard from "../components/EducationCard"
-import CommunityCard from "../components/CommunityCard"
-import ProjectsCard from "../components/ProjectsCard"
-import NewsletterBanner from "../components/NewsletterBanner"
-import IlliniBlockchainMainComponent from "../components/IlliniBlockchainMainComponent"
+import {
+  EducationCard,
+  CommunityCard,
+  ProjectsCard,
+  NewsletterBanner,
+  IlliniBlockchainMainComponent
+} from "../components/home";
 
 
 
