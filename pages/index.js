@@ -8,7 +8,8 @@ import {
   CommunityCard,
   ProjectsCard,
   NewsletterBanner,
-  IlliniBlockchainMainComponent
+  IlliniBlockchainMainComponent,
+  PillarCard
 } from "../components/home";
 
 
@@ -34,6 +35,8 @@ font-size: 48px;
 `
 
 const WhatDoWeDoComponent = styled.div`
+margin: auto;
+width: 90%;
 margin-bottom: 150px;
 color: #ffffff; 
 display: flex;
@@ -53,9 +56,27 @@ export default function Home() {
       <NewsletterBanner />
       <div><StyledTitle>What do we do?</StyledTitle></div>
       <WhatDoWeDoComponent>           
-        <EducationCard />
-        <CommunityCard />
-        <ProjectsCard /> 
+        <PillarCard
+          title={'Education'}
+          description={'Through a collection of medium articles, twitter posts,\
+          notion pages, and educational blockchain events Illini Blockchain\
+          educates people of all skill levels.'}
+          pillar={'education'}
+        />
+        <PillarCard
+          title={'Community'}
+          description={'Through a collection of medium articles, twitter posts,\
+          notion pages, and educational blockchain events Illini Blockchain\
+          educates people of all skill levels.'}
+          pillar={'community'}
+        />
+        <PillarCard
+          title={'Projects'}
+          description={'Through a collection of medium articles, twitter posts,\
+          notion pages, and educational blockchain events Illini Blockchain\
+          educates people of all skill levels.'}
+          pillar={'projects'}
+        />
       </WhatDoWeDoComponent>
       
     </div>
