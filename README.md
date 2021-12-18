@@ -1,39 +1,86 @@
 # Illini Blockchain Website
 [Link to mockups on Figma](https://www.figma.com/file/eOlu07APhtKh3n8A5u1dDS/Illini-Blockchain-Website?node-id=0%3A1)
 
----
+Illini Blockchain's website. Homebase for people to learn more about us, find our content, and get involved. Made with Nextjs and styled components, deployed on TBD.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Installation
 
-## Getting Started
-
-First, run the development server:
-
+Clone the repo.
+```bash
+git clone https://github.com/IlliniBlockchain/website.git
+```
+Install dependencies.
+```bash
+npm install
+```
+Run app in development mode.
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## File Structure
+To get assimilated to the setup, you should get to know the file structure a bit. Components is organized as follows: first level of folders for pages and important global components, within these folders hold components that are used only by that page with folders for multi-component components and single files for styled components. All folders here use an `index.js` file to export the components in that folder for nicer imports. `shared` is for components used in multiple pages, and `shared-styled` is the same but for styled components. This structure is subject to change.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Here is a brief example/preview.
+```
+  components/
+    about/
+    blog/
+    contact/
+    home/
+      LandingBanner/
+        LandingContainer.js
+        LandingHeader.js
+        LandingSubheader.js
+        index.js
+      NewsletterBanner/
+      index.js
+      ...
+    projects/
+    layout/
+    shared/
+    shared-styled/
+  pages/
+    api/
+    _app.js
+    _document.js
+    about.js
+    blog.js
+    contact.js
+    index.js
+    projects.js
+  public/
+  styles/
+  package.json
+  ...
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contributing
+Go to issues, pick one to work on.
 
-## Learn More
+Make sure your main branch in updated.
+```
+git checkout main
+git pull
+```
 
-To learn more about Next.js, take a look at the following resources:
+Make a new branch locally.
+```
+git checkout -b new-branch-name
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Make your changes and make sure everything is working and looking good locally (making commits along the way of course). Push your branch with your changes to the online repository.
+```
+git push -u origin new-branch-name
+OR after the first time
+git push
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Make a pull request. Put an emoji at the start of the PR name by typing ":" then searching for an emoji. Write about your changes, include screenshots and/or explanations for certain choices. Request someone to review it. Link the issue. Once reviewed, merge.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
