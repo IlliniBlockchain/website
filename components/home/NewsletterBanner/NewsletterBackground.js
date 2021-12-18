@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const NewsletterBackground = styled.div`
-background-color: #e84a27;
-color: white;
+background-color: var(--orange);
 margin: 100px auto;
 padding: 50px 0;
 `

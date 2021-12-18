@@ -6,8 +6,8 @@ import PillarCardContainer from './PillarCardContainer'
 const PillarCard = ({ title, description, pillar }) => (
   <PillarCardContainer
     style={{
-			backgroundColor: (pillar === 'education') ? '#002855' : (pillar === 'community') ? '#ffffff' : '#e84a27',
-			color: (pillar === 'community') ? '#202020' : '#ffffff',
+			backgroundColor: (pillar === 'education') ? 'var(--navy-blue)' : (pillar === 'community') ? 'var(--white)' : 'var(--orange)',
+			color: (pillar === 'community') ? 'var(--dark-text-color)' : 'var(--light-text-color)',
 		}}
   >
     <PillarTitle>{title}</PillarTitle>
