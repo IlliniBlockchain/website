@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Navbar from '../components/nav'
 import styles from '../styles/Home.module.css'
 import {
-  StyledHeader
+  SectionTitle,
 } from '../components/shared-styled'
 
 export default function Blogs() {
@@ -14,7 +13,7 @@ export default function Blogs() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <StyledHeader>Blogs</StyledHeader>
+        <SectionTitle>Blogs</SectionTitle>
         
       </div>
     )

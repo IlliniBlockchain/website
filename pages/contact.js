@@ -13,7 +13,7 @@ export default function ContactUs() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <SectionTitle>Welcome to the Contact Us Page</SectionTitle>       
+        <SectionTitle>Contact Us</SectionTitle>       
   
       </div>
     )
