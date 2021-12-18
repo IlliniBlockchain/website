@@ -1,18 +1,18 @@
 import React from 'react'
-import FlatCard from './FlatCard'
-import StyledTitle from './StyledTitle'
-import StyledDescription from './StyledDescription'
+import PillarTitle from './PillarTitle'
+import PillarDescription from './PillarDescription'
+import PillarCardContainer from './PillarCardContainer'
 
 const PillarCard = ({ title, description, pillar }) => (
-  <FlatCard
+  <PillarCardContainer
     style={{
-			backgroundColor: (pillar === 'education') ? '#002855' : (pillar === 'community') ? '#ffffff' : '#e84a27',
-			color: (pillar === 'community') ? '#202020' : '#ffffff',
+			backgroundColor: (pillar === 'education') ? 'var(--navy-blue)' : (pillar === 'community') ? 'var(--white)' : 'var(--orange)',
+			color: (pillar === 'community') ? 'var(--dark-text-color)' : 'var(--light-text-color)',
 		}}
   >
-    <StyledTitle>{title}</StyledTitle>
-    <StyledDescription>{description}</StyledDescription>
-  </FlatCard>
+    <PillarTitle>{title}</PillarTitle>
+    <PillarDescription>{description}</PillarDescription>
+  </PillarCardContainer>
 )
 
 export default PillarCard

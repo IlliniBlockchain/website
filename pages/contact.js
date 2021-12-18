@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {
-  StyledHeader
+  SectionTitle
 } from '../components/shared-styled'
 
 export default function ContactUs() {
@@ -13,7 +13,7 @@ export default function ContactUs() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <StyledHeader>Welcome to the Contact Us Page</StyledHeader>       
+        <SectionTitle>Contact Us</SectionTitle>       
   
       </div>
     )

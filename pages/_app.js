@@ -1,9 +1,10 @@
 import Layout from '../components/layout'
-import '../styles/globals.css'
+import { GlobalStyle } from '../components/shared-styled'
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+      <GlobalStyle/>
       <Component {...pageProps} />
     </Layout>
   );

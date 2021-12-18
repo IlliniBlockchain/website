@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Navbar from '../components/nav'
 import styles from '../styles/Home.module.css'
-import styled from 'styled-components';
 import {
-  StyledHeader,
-  StyledAbout
+  SectionTitle
 } from '../components/shared-styled'
 
 export default function AboutUs() {
@@ -16,22 +13,7 @@ export default function AboutUs() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <StyledHeader>Who are we?</StyledHeader>       
-
-        <div style={{ color: '#ffffff' }}>
-          <StyledAbout>
-                The Illini Blockchain Club is a joint venture between Berkeley Engineering’s 
-            Sutardja Center for Entrepreneurship and Technology, Blockchain at Berkeley, and the 
-            Haas School of Business. Entrepreneurs can pursue ventures in the blockchain space, 
-            tap into the vast resources of UC Berkeley and Silicon Valley, and receive expert industry 
-            guidance to create high-value blockchain startups.
-
-            ********************Insert description of us here***********************
-          </StyledAbout>
-        </div>
-
-        <StyledHeader>Meet the Team</StyledHeader> 
-        <StyledHeader>Insert Team Component Here </StyledHeader>
+        <SectionTitle>Who are we?</SectionTitle>       
 
       </div>
     )
