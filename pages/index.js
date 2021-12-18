@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import {
   NewsletterBanner,
-  IlliniBlockchainMainComponent,
-  PillarCard,
-  StyledTitle,
-  WhatDoWeDoComponent
+  LandingBanner,
+  Pillars,
 } from "../components/home";
 
 export default function Home() {
@@ -16,34 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <IlliniBlockchainMainComponent />
+      <LandingBanner />
 
       <NewsletterBanner />
 
-      <StyledTitle>What do we do?</StyledTitle>
-      <WhatDoWeDoComponent>           
-        <PillarCard
-          title={'Education'}
-          description={'Through a collection of medium articles, twitter posts,\
-          notion pages, and educational blockchain events Illini Blockchain\
-          educates people of all skill levels.'}
-          pillar={'education'}
-        />
-        <PillarCard
-          title={'Community'}
-          description={'Through a collection of medium articles, twitter posts,\
-          notion pages, and educational blockchain events Illini Blockchain\
-          educates people of all skill levels.'}
-          pillar={'community'}
-        />
-        <PillarCard
-          title={'Projects'}
-          description={'Through a collection of medium articles, twitter posts,\
-          notion pages, and educational blockchain events Illini Blockchain\
-          educates people of all skill levels.'}
-          pillar={'projects'}
-        />
-      </WhatDoWeDoComponent>
+      <Pillars />
       
     </div>
   )

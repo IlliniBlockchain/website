@@ -1,8 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
-import StyledTitle from './StyledTitle'
-import StyledDescription from './StyledDescription'
-import CustomNewsletterBanner from './CustomNewsletterBanner'
+import NewsletterHeader from './NewsletterHeader'
+import NewsletterSubheader from './NewsletterSubheader'
+import NewsletterContainer from './NewsletterContainer'
+import NewsletterBackground from './NewsletterBackground'
 
 // const SubscribeButton = styled.button<ButtonComponentProps>`
 //   padding: 5px 12px;
@@ -17,11 +17,12 @@ import CustomNewsletterBanner from './CustomNewsletterBanner'
 // `;
 
 const NewsletterBanner = () => (
-    <CustomNewsletterBanner>
-      <StyledTitle>Sign up for our newsletter!</StyledTitle>
-      <StyledDescription>Receive the latest updates on everything Illini Blockchain</StyledDescription>
-    </CustomNewsletterBanner>
-  )
+  <NewsletterBackground>
+    <NewsletterContainer>
+      <NewsletterHeader>Sign up for our newsletter!</NewsletterHeader>
+      <NewsletterSubheader>Receive the latest updates on everything Illini Blockchain</NewsletterSubheader>
+    </NewsletterContainer>
+  </NewsletterBackground>
+)
   
-  
-  export default NewsletterBanner
+export default NewsletterBanner
