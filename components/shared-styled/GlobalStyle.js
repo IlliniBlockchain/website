@@ -12,6 +12,7 @@ html {
   --navy-blue: #002855;
   --white: #fff;
   --orange: #e84a27;
+  --footer-background: #181818;
 }
 
 @media only screen and (max-width: calc(1200px * 100 / 95)) {
@@ -27,12 +28,18 @@ body {
   background-color: var(--background-color);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Montserrat, Poppins, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: var(--light-text-color)
+  color: var(--light-text-color);
+  line-height: 1.4;
+  min-height: 100vh;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 * {
