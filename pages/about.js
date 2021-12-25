@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import {Members} from '../components/about-us/AboutStyles'
 import {
+  MembersContainer,
   SectionTitle,
   Container
 } from '../components/shared-styled'
@@ -16,7 +16,7 @@ export default function AboutUs() {
         </Head>
 
         <SectionTitle>Team</SectionTitle>
-        <Members>
+        <MembersContainer>
           <Member name="Zayyan Faizal" image="/headshots/zayyan_faizal.jpg" twitter="brownmanwonders" linkedinURL="https://www.linkedin.com/in/zayyanfaizal" />
           <Member name="Luke Clancy" image="/headshots/luke_clancy.jpg" twitter="luke_clancy1" linkedinURL="https://www.linkedin.com/in/luke-clancy-a88812191/"/>
           <Member name="Alec Chen" image="/headshots/alec_chen.png" twitter="alecchendev" linkedinURL="https://www.linkedin.com/in/alecchendev/"/>
@@ -24,10 +24,10 @@ export default function AboutUs() {
           <Member name="Amaan Sameer" image="/headshots/amaan_sameer.jpg" twitter="AmaanSameer3" linkedinURL="https://www.linkedin.com/in/amaan-sameer-68917a180/"/>
           <Member name="Zhengyu Li" image="/headshots/zhengyu_li.png" twitter="Zhengyu76252961" linkedinURL="https://www.linkedin.com/in/zhengyu-li-588391125/"/>
           <Member name="Rohan Bindu" image="/headshots/rohan_bindu.jpg" twitter="romoney0" linkedinURL="https://www.linkedin.com/in/rohan-bindu/"/>
-          <Member name="Adrian Petrikiw" image="/headshots/rohan_bindu.jpg" twitter="petrykiw" linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"/>
-          <Member name="Varun Siva" image="/headshots/rohan_bindu.jpg" twitter="VarunSiva14"/>
+          <Member name="Adrian Petrykiw" image="/headshots/adrian_petrykiw.jpg" twitter="petrykiw" linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"/>
+          <Member name="Varun Siva" image="/headshots/varun_siva.jpg" twitter="VarunSiva14"/>
 
-        </Members>
+        </MembersContainer>
       </Container>
     )
   }

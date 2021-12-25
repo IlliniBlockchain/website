@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MemberInfo, MemberImage, Nametag } from './MemberStyles';
+import { MemberInfo, MemberImage, Nametag } from '../../shared-styled/index';
 import {AiFillLinkedin, AiOutlineTwitter} from 'react-icons/ai'
 const iconSize = "1.5rem";
 export default function Member(props) {

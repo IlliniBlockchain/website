@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Members = styled.div`
+const MembersContainer = styled.div`
     display:block;
     width:70%;
     margin-left: auto;
@@ -11,6 +11,4 @@ const Members = styled.div`
 
 `
 
-export {
-    Members
-}
+export default MembersContainer
