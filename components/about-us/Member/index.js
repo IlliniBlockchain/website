@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MemberInfo, MemberImage, Nametag } from '../../shared-styled/index';
+import { MemberInfo, MemberImage, Nametag, SocialIcon } from '../../shared-styled/index';
 import {AiFillLinkedin, AiOutlineTwitter} from 'react-icons/ai'
 const iconSize = "1.5rem";
 export default function Member(props) {
@@ -14,10 +14,14 @@ export default function Member(props) {
             </MemberImage>
             <Nametag>{name}</Nametag>
             {linkedin && 
-                <a href={linkedin} target="_blank"><AiFillLinkedin style={{fontSize: iconSize}}/></a>
+                <SocialIcon>
+                    <a href={linkedin} target="_blank"><AiFillLinkedin /></a>
+                </SocialIcon>
             }
             {twitter &&
-                <a href={`https://www.twitter.com/${twitter}`} target="_blank"><AiOutlineTwitter style={{fontSize: iconSize}}/></a>
+                <SocialIcon>
+                    <a href={`https://www.twitter.com/${twitter}`} target="_blank"><AiOutlineTwitter /></a>
+                </SocialIcon>
             }    
             </MemberInfo>
     )
