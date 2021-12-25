@@ -7,6 +7,8 @@ const Members = styled.div`
     margin-right: auto;
     text-align:center;
     height: 100vh;
+    display: table;
+
 `
 
 export {
