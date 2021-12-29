@@ -7,30 +7,42 @@ import ProjectStackLinks from './ProjectStackLinks'
 import ProjectStack from './ProjectStack'
 import ProjectLinks from './ProjectLinks'
 import ProjectDescription from './ProjectDescription'
-import {AiFillLinkedin, AiOutlineTwitter} from 'react-icons/ai'
+import ProjectStackLinksDescription from './ProjectStackLinksDescription'
+import { AiFillGithub } from 'react-icons/ai'
+import { BiLinkExternal } from 'react-icons/bi'
 
-const Project = ({ title, description, stack, githubUrl, websiteUrl }) => {
+const Project = ({ title, description, imageSrc, imageAlt, stack, githubUrl, websiteUrl }) => {
 
   return (
     <ProjectContainer>
       <ProjectTitle>{title}</ProjectTitle>
       <ProjectContent>
         <ProjectImage>
-
+          <Image src={imageSrc} alt={imageAlt} layout="responsive" width={200} height={200}/>
         </ProjectImage>
-        <ProjectStackLinks>
-          <ProjectStack>
+        <ProjectStackLinksDescription>
 
-          </ProjectStack>
+          <ProjectDescription>
+            {description}
+          </ProjectDescription>
 
-          <ProjectLinks>
+          <ProjectStackLinks>
+            <ProjectStack>
+              {stack.map((tool) => (
+                <p>{tool}</p>
+              ))}
 
-          </ProjectLinks>
+            </ProjectStack>
 
-        </ProjectStackLinks>
-        <ProjectDescription>
-          {description}
-        </ProjectDescription>
+            <ProjectLinks>
+              {githubUrl && <a href={githubUrl} target="_blank"><AiFillGithub/></a>}
+              {websiteUrl && <a href={websiteUrl} target="_blank"><BiLinkExternal/></a>}
+            </ProjectLinks>
+
+          </ProjectStackLinks>
+
+
+        </ProjectStackLinksDescription>
       </ProjectContent>
     </ProjectContainer>
   )
