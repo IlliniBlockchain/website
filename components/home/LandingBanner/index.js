@@ -2,11 +2,16 @@ import React from 'react'
 import LandingHeader from './LandingHeader'
 import LandingSubheader from './LandingSubheader'
 import LandingContainer from './LandingContainer'
+import LandingGradient from './LandingGradient'
 
 const LandingBanner = () => (
   <LandingContainer>
-    <LandingHeader>Illini Blockchain</LandingHeader>
-    <LandingSubheader>The premier source for blockchain at UIUC</LandingSubheader>
+    <LandingGradient/>
+    <LandingHeader>Building UIUC's Blockchain Ecosystem</LandingHeader>
+    <LandingSubheader>
+      Illini Blockchain is the student-led hub for blockchain research, development, and collaboration
+      at the University of Illinois
+    </LandingSubheader>
   </LandingContainer>
 )
 

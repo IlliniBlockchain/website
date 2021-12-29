@@ -4,12 +4,13 @@ import Link from 'next/link';
 const Nav = styled.nav`
 padding-left: 85px;
 height: 80px;
-background: #202020;
 color: #fff; 
 display: flex;
 justify-content: space-between;
 align-items: center;
 font-weight: bold;
+position:relative;
+z-index:1;
 `
 
 const StyledLink = styled.a`

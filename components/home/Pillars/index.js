@@ -6,7 +6,7 @@ const Pillars = () => {
 
   return (
     <>
-      <SectionTitle>What do we do?</SectionTitle>
+      <SectionTitle>Our Work</SectionTitle>
       <PillarsContainer>           
         <PillarCard
           title={'Education'}
