@@ -7,11 +7,12 @@ margin-top:10px;
 height: 80px;
 color: #fff; 
 display: flex;
-justify-content: space-between;
+justify-content: end;
 align-items: center;
 font-weight: bold;
 position:relative;
 z-index:1;
+white-space:nowrap;
 `
 
 const StyledLink = styled.a`
@@ -28,7 +29,6 @@ padding-bottom: 10px;
 `
 
 const StyledLinkTwo = styled.a`
-margin-top: 10px;
 margin-right: 100px;
   padding-left: 20px;
   padding-right: 20px;
@@ -50,7 +50,7 @@ margin-right: 100px;
 const Navbar = () => {
     return (
         <Nav>
-            <div style={{display:"flex", marginLeft:'40px', alignItems:"center"}}>
+            <div style={{display:"flex", marginLeft:'40px', alignItems:"center", marginRight:"auto", whiteSpace:"nowrap"}}>
               <Image src="/blocks_transparent.png" width="50px" height="50px" layout="fixed"/>
               <div style={{fontSize:"1.5rem", padding:"1rem"}}> ILLINI BLOCKCHAIN </div>
             </div>
