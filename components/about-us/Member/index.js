@@ -15,12 +15,12 @@ export default function Member(props) {
             <Nametag>{name}</Nametag>
             {linkedin && 
                 <SocialIcon>
-                    <a href={linkedin} target="_blank"><AiFillLinkedin /></a>
+                    <a href={linkedin} target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
                 </SocialIcon>
             }
             {twitter &&
                 <SocialIcon>
-                    <a href={`https://www.twitter.com/${twitter}`} target="_blank"><AiOutlineTwitter /></a>
+                    <a href={`https://www.twitter.com/${twitter}`} target="_blank" rel="noreferrer"><AiOutlineTwitter /></a>
                 </SocialIcon>
             }    
             </MemberInfo>
