@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const LandingHeader = styled.h1`
-font-size: 5rem;
+font-size: 4vmax;
 width:60%;
 text-align: center;
 display:flex;

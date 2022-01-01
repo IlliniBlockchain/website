@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const SectionTitle = styled.h1`
 font-size: 3rem;
-margin: 75px auto;
+margin-bottom: 75px;
 text-align: center;
 `
 

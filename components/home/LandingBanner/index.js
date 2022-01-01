@@ -6,12 +6,13 @@ import LandingGradient from './LandingGradient'
 
 const LandingBanner = () => (
   <LandingContainer>
-    <LandingGradient/>
+    {/* <LandingGradient> */}
     <LandingHeader>Building UIUC's Blockchain Ecosystem</LandingHeader>
     <LandingSubheader>
       Illini Blockchain is the student-led hub for blockchain research, development, and collaboration
       at the University of Illinois
     </LandingSubheader>
+    {/* </LandingGradient> */}
   </LandingContainer>
 )
 

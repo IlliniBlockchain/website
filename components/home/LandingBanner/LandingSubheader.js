@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 
 const LandingSubheader = styled.h2`
-font-size: 2rem;
+font-size: 2vmax;
 font-weight: normal;
 position:relative;
 margin-left:auto;
