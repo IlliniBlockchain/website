@@ -1,13 +1,15 @@
 import Image from 'next/image'
-import ProjectContainer from './ProjectContainer'
-import ProjectTitle from './ProjectTitle'
-import ProjectContent from './ProjectContent'
-import ProjectImage from './ProjectImage'
-import ProjectStackLinks from './ProjectStackLinks'
-import ProjectStack from './ProjectStack'
-import ProjectLinks from './ProjectLinks'
-import ProjectDescription from './ProjectDescription'
-import ProjectStackLinksDescription from './ProjectStackLinksDescription'
+import {
+  ProjectContainer,
+  ProjectContent,
+  ProjectDescription,
+  ProjectImage,
+  ProjectLinks,
+  ProjectStack,
+  ProjectStackLinks,
+  ProjectStackLinksDescription,
+  ProjectTitle
+} from './ProjectStyles'
 import { AiFillGithub } from 'react-icons/ai'
 import { BiLinkExternal } from 'react-icons/bi'
 
