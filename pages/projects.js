@@ -23,7 +23,7 @@ export default function Projects() {
 
           <Project
             title={'NFT Mint'}
-            imageSrc={'/illiniBlockchainNFT.svg'}
+            imageSrc={'/illiniBlockchainNFT.png'}
             imageAlt={'Illini NFT Mint Image'}
             stack={['Next.js', 'ethers.js']}
             githubUrl={'https://github.com/IlliniBlockchain/nft-mint'}
