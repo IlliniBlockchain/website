@@ -9,7 +9,7 @@ import {Member} from '../components/about-us'
 export default function AboutUs() {
     return (
       <Container>
-        <Head>t
+        <Head>
           <title>About Us</title>
           <meta name="About Us - Illini Blockchain" content="About the Illini Blockchain Team" />
           <link rel="icon" href="/favicon.ico" />

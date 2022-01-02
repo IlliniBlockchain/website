@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 html {
+
   /* Variables */
   --global-width: 1200px;
   --global-width-mobile: 95%;
@@ -26,8 +27,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Montserrat, Poppins, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Montserrat, Poppins, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Montserrat;
   color: var(--light-text-color);
   line-height: 1.4;
   min-height: 100vh;

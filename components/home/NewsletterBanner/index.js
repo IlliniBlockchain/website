@@ -1,28 +1,18 @@
 import React from 'react'
-import NewsletterHeader from './NewsletterHeader'
-import NewsletterSubheader from './NewsletterSubheader'
-import NewsletterContainer from './NewsletterContainer'
-import NewsletterBackground from './NewsletterBackground'
+import { NewsletterBackground, NewsletterContainer, NewsletterHeader, NewsletterSubheader } from './NewsletterStyles'
+import EmailForm from '../../EmailForm'
 
-// const SubscribeButton = styled.button<ButtonComponentProps>`
-//   padding: 5px 12px;
-//   color: white;
-//   font-size: 36px;
-//   font-weight: 700;
-//   background-color: ${{color: '#202020'}};
-//   border: 0px;
-//   border-radius: 3px;
-//   appearance: none;
-//   cursor: pointer;
-// `;
+const NewsletterBanner = () => {
 
-const NewsletterBanner = () => (
+  return (
   <NewsletterBackground>
     <NewsletterContainer>
-      <NewsletterHeader>Sign up for our newsletter!</NewsletterHeader>
-      <NewsletterSubheader>Receive the latest updates on everything Illini Blockchain</NewsletterSubheader>
+        <NewsletterHeader>Sign up for our newsletter!</NewsletterHeader>
+        <NewsletterSubheader>Receive the latest updates on everything Illini Blockchain</NewsletterSubheader>
     </NewsletterContainer>
+    <EmailForm/>
   </NewsletterBackground>
-)
+  )
+}
   
 export default NewsletterBanner
