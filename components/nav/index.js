@@ -51,10 +51,10 @@ const Navbar = () => {
     return (
         <Nav>
             <Link href='/' passHref>
-              <div style={{display:"flex", marginLeft:'40px', alignItems:"center", marginRight:"auto", whiteSpace:"nowrap", cursor:"pointer"}}>
+              <a style={{display:"flex", marginLeft:'40px', alignItems:"center", marginRight:"auto", whiteSpace:"nowrap"}}>
                 <Image src="/blocks_transparent.png" width="50px" height="50px" layout="fixed"/>
                 <div style={{fontSize:"1.5rem", padding:"1rem"}}> ILLINI BLOCKCHAIN </div>
-              </div>
+              </a>
             </Link>
             <div>
 
