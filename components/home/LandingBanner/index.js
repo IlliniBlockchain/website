@@ -3,7 +3,7 @@ import { LandingContainer, LandingHeader, LandingSubheader } from './LandingStyl
 const LandingBanner = () => (
   <LandingContainer>
     {/* <LandingGradient> */}
-    <LandingHeader>Building UIUC's Blockchain Ecosystem</LandingHeader>
+    <LandingHeader>Building UIUC&apos;s Blockchain Ecosystem</LandingHeader>
     <LandingSubheader>
       Illini Blockchain is the student-led hub for blockchain research, development, and collaboration
       at the University of Illinois
