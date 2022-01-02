@@ -1,5 +1,5 @@
 import React from 'react'
-import {PillarTitle, PillarDescription, PillarCardContainer, PillarButton} from './PillarStyles'
+import {PillarTitle, PillarDescription, PillarCardContainer, PillarButton, PillarIcon} from './PillarStyles'
 import Link from 'next/link'
 
 const PillarCard = ({ title, description, pillar, icon, cta, link }) => (
@@ -11,7 +11,7 @@ const PillarCard = ({ title, description, pillar, icon, cta, link }) => (
 		}}
   >
     <PillarTitle>{title}</PillarTitle>
-    <div style={{fontSize:"4vmax"}}>{icon}</div>
+    <PillarIcon>{icon}</PillarIcon>
     <PillarDescription>{description}</PillarDescription>
     <Link href={link}>
       <PillarButton>{cta}</PillarButton>

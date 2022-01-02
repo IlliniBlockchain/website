@@ -40,10 +40,14 @@ font-family:Montserrat;
 cursor: pointer;
 `
 
+const PillarIcon = styled.div`
+font-size:4rem;
+`
 
 export {
     PillarTitle, 
     PillarDescription, 
     PillarCardContainer,
-    PillarButton
+    PillarButton,
+    PillarIcon
 }
