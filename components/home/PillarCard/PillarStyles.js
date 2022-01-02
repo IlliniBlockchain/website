@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 const PillarTitle = styled.h3`
 text-align: center;
-font-size: 2.5vmax;
+font-size: 2rem;
 `
 const PillarDescription = styled.h4`
-font-size: 1.2vmax;
+font-size: 1.2rem;
 font-weight: lighter;
 margin-bottom:2rem;
 `
 
 const PillarCardContainer = styled.div`
-width: 500px;
+width: 400px;
 border-radius: 10px;
 margin: 10px;
 margin-bottom: 25px;
@@ -30,14 +30,14 @@ border-radius:1rem;
 margin-bottom:1rem;
 margin-left: auto;
 margin-right: auto;
-font-size:1.2vmax;
+font-size:1rem;
 white-space:nowrap;
 background:var(--background-color);
 color:white;
 font-weight:bold;
 margin-top:auto;
 font-family:Montserrat;
-
+cursor: pointer;
 `
 
 

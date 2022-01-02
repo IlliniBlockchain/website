@@ -8,7 +8,7 @@ position:relative;
 display:flex;
 flex-direction:row;
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 1100px) {
     flex-direction: column;
   }
 
@@ -22,8 +22,8 @@ position:relative;
 const NewsletterHeader = styled.h2`
 font-size: 2vmax;
 margin: 0;
-width:60%;
-@media only screen and (max-width: 475px) {
+width:70%;
+@media only screen and (max-width: 1100px) {
     width:80%;
     text-align:center;
   }
@@ -33,7 +33,7 @@ font-size: 1.5vmax;
 margin: 0;
 font-weight: normal;
 width:80%;
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 1100px) {
     text-align:center;
   }
 
