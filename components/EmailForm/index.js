@@ -40,24 +40,24 @@ const EmailForm = () => {
             .join('&');
       }
 
-    useEffect(() => {
-        if(Object.keys(errors).length === 0 && isSubmitted){
+    // useEffect(() => {
+    //     if(Object.keys(errors).length === 0 && isSubmitted){
 
-            fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: encode({ 'form-name': 'contact-form', ...formData })
-            })
-            .then(() => alert('Success!'))
-            .then(() => setIsSubmitted(false))
-            .then(() => setFormData({email: ''}))
-            .catch(error => alert(error))
-        }
-    }, [errors, formData, isSubmitted])
+    //         fetch('/', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //             body: encode({ 'form-name': 'contact-form', ...formData })
+    //         })
+    //         .then(() => alert('Success!'))
+    //         .then(() => setIsSubmitted(false))
+    //         .then(() => setFormData({email: ''}))
+    //         .catch(error => alert(error))
+    //     }
+    // }, [errors, formData, isSubmitted])
 
     return (
         <FormContainer>
-            <Form onSubmit={handleSubmit}>
+            <Form action="/success" method="POST" data-netlify="true">
                 <div className='form-inputs'>
                     <label htmlFor='email' className='form-label'/>
                     <FormInput 
