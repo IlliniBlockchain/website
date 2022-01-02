@@ -13,7 +13,7 @@ const PillarCard = ({ title, description, pillar, icon, cta, link }) => (
     <PillarTitle>{title}</PillarTitle>
     <PillarIcon>{icon}</PillarIcon>
     <PillarDescription>{description}</PillarDescription>
-    <Link href={link}>
+    <Link href={link} passHref>
       <PillarButton>{cta}</PillarButton>
     </Link>
   </PillarCardContainer>

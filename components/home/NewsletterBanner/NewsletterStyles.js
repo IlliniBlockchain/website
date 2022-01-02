@@ -20,7 +20,7 @@ position:relative;
 `
 
 const NewsletterHeader = styled.h2`
-font-size: 2vmax;
+font-size: 1.8rem;
 margin: 0;
 width:70%;
 @media only screen and (max-width: 1100px) {
@@ -29,7 +29,7 @@ width:70%;
   }
 `
 const NewsletterSubheader = styled.h3`
-font-size: 1.5vmax;
+font-size: 1.2rem;
 margin: 0;
 font-weight: normal;
 width:80%;
