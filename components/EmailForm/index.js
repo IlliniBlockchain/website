@@ -57,7 +57,7 @@ const EmailForm = () => {
 
     return (
         <FormContainer>
-            <Form onSubmit={handleSubmit} data-netlify="true">
+            <Form onSubmit={handleSubmit} method="POST" data-netlify="true" >
                 <div className='form-inputs'>
                     <label htmlFor='email' className='form-label'/>
                     <input type="hidden" name="newsletter" value="newsletter-form" />
