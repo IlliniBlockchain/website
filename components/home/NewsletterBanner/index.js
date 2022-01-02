@@ -3,7 +3,7 @@ import NewsletterHeader from './NewsletterHeader'
 import NewsletterSubheader from './NewsletterSubheader'
 import NewsletterContainer from './NewsletterContainer'
 import NewsletterBackground from './NewsletterBackground'
-
+import EmailForm from '../../EmailForm'
 // const SubscribeButton = styled.button<ButtonComponentProps>`
 //   padding: 5px 12px;
 //   color: white;
@@ -16,13 +16,17 @@ import NewsletterBackground from './NewsletterBackground'
 //   cursor: pointer;
 // `;
 
-const NewsletterBanner = () => (
+const NewsletterBanner = () => {
+
+  return (
   <NewsletterBackground>
     <NewsletterContainer>
-      <NewsletterHeader>Sign up for our newsletter!</NewsletterHeader>
-      <NewsletterSubheader>Receive the latest updates on everything Illini Blockchain</NewsletterSubheader>
+        <NewsletterHeader>Sign up for our newsletter!</NewsletterHeader>
+        <NewsletterSubheader>Receive the latest updates on everything Illini Blockchain</NewsletterSubheader>
     </NewsletterContainer>
+    <EmailForm/>
   </NewsletterBackground>
-)
+  )
+}
   
 export default NewsletterBanner

@@ -3,6 +3,7 @@ import {PillarTitle, PillarDescription, PillarCardContainer, PillarButton} from 
 import Link from 'next/link'
 
 const PillarCard = ({ title, description, pillar, icon, cta, link }) => (
+  
   <PillarCardContainer
     style={{
 			backgroundColor: (pillar === 'education') ? 'var(--navy-blue)' : (pillar === 'community') ? 'var(--white)' : 'var(--orange)',

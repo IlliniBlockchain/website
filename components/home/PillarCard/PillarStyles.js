@@ -36,6 +36,8 @@ background:var(--background-color);
 color:white;
 font-weight:bold;
 margin-top:auto;
+font-family:Montserrat;
+
 `
 
 
