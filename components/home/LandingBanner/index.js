@@ -1,9 +1,5 @@
 import React from 'react'
-import LandingHeader from './LandingHeader'
-import LandingSubheader from './LandingSubheader'
-import LandingContainer from './LandingContainer'
-import LandingGradient from './LandingGradient'
-
+import { LandingContainer, LandingHeader, LandingSubheader } from './LandingStyles'
 const LandingBanner = () => (
   <LandingContainer>
     {/* <LandingGradient> */}
