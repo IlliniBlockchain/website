@@ -5,6 +5,7 @@ import {
   Container
 } from '../components/shared-styled'
 import {Member} from '../components/about-us'
+import InfoBanner from '../components/about-us/InfoBanner'
 
 export default function AboutUs() {
     return (
@@ -14,7 +15,7 @@ export default function AboutUs() {
           <meta name="About Us - Illini Blockchain" content="About the Illini Blockchain Team" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
+        <InfoBanner></InfoBanner>
         <SectionTitle>Team</SectionTitle>
         <MembersContainer>
           <Member name="Zayyan Faizal" image="/headshots/zayyan_faizal.jpg" twitter="brownmanwonders" linkedinURL="https://www.linkedin.com/in/zayyanfaizal" />

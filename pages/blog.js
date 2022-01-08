@@ -1,9 +1,11 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import {
   SectionTitle,
 } from '../components/shared-styled'
-
+ 
 export default function Blogs() {
+
     return (
       <div>
         <Head>t
