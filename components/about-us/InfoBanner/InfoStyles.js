@@ -7,6 +7,7 @@ background: white;
 display:table;
 table-layout:fixed;
 padding:4rem;
+margin-bottom: 75px;
 
 @media only screen and (max-width: 650px) {
     display: flex;

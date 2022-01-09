@@ -49,7 +49,7 @@ font-size: 2rem;
 `
 
 const ProjectImage = styled.div`
-width: 25%;
+width: 30%;
 height: fit-content;
 margin-right: 50px;
 border-radius: 10px;
@@ -73,6 +73,7 @@ const ProjectDescription = styled.p`
 margin: 0;
 font-size: 1.25rem;
 color: var(--dark-text-color);
+padding-bottom: 20px;
 
 @media only screen and (max-width: calc(850px)) {
   margin-bottom: 25px;
@@ -90,7 +91,12 @@ padding: 50px;
 `
 
 const ProjectContainer = styled.div`
-margin-bottom: 75px;
+margin-bottom: 50px;
+margin: auto;
+
+@media only screen and (max-width: calc(850px)) {
+  width: 90%;
+}
 `
 
 export {
