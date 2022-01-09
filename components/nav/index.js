@@ -70,7 +70,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div>
-              <Link href='/contact' passHref>
+              <Link href='mailto:illiniblockchain@gmail.com' passHref>
                   <StyledLinkTwo> Contact Us</StyledLinkTwo>
               </Link>
             </div>

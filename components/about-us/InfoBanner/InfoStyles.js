@@ -6,10 +6,12 @@ width:100vw;
 background: white;
 display:table;
 table-layout:fixed;
+padding:4rem;
 
 @media only screen and (max-width: 650px) {
     display: flex;
     flex-direction:column;
+    padding:0;
 }
 `
 
@@ -20,7 +22,7 @@ color: black;
 font-weight: bold;
 text-align: left;
 padding: 2rem 0 0 10%;
-margin-left:10%;
+margin-left:15%;
 display:table-cell;
 
 @media only screen and (max-width: 650px) {
@@ -34,7 +36,8 @@ const InfoDescription = styled.div`
 color:black;
 padding:2rem 10% 2rem 0;
 font-size:1.2rem;
-margin-right:10%;
+line-height:2rem;
+margin-right:15%;
 display:table-cell;
 vertical-align:middle;
 

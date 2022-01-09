@@ -6,8 +6,8 @@ const MembersContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     text-align:center;
-    height: 100vh;
     display: table;
+    margin-bottom:2rem;
 
 `
 
