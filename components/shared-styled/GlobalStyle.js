@@ -6,7 +6,7 @@ html {
 
   /* Variables */
   --global-width: 1200px;
-  --global-width-mobile: 10%;
+  --global-width-mobile: 100%;
   --background-color: #202020;
   --dark-text-color: black;
   --light-text-color: white;
