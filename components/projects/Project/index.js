@@ -31,14 +31,14 @@ const Project = ({ title, description, imageSrc, imageAlt, stack, githubUrl, web
           <ProjectStackLinks>
             <ProjectStack>
               {stack.map((tool) => (
-                <p>{tool}</p>
+                <p key={tool}>{tool}</p>
               ))}
 
             </ProjectStack>
 
             <ProjectLinks>
-              {githubUrl && <a href={githubUrl} target="_blank"><AiFillGithub/></a>}
-              {websiteUrl && <a href={websiteUrl} target="_blank"><BiLinkExternal/></a>}
+              {githubUrl && <a href={githubUrl} target="_blank" rel="noreferrer"><AiFillGithub/></a>}
+              {websiteUrl && <a href={websiteUrl} target="_blank" rel="noreferrer"><BiLinkExternal/></a>}
             </ProjectLinks>
 
           </ProjectStackLinks>

@@ -19,7 +19,7 @@ const Pillars = () => {
           roundtable discussions, and educational events. '}
           pillar={'education'}
           cta={'Read Our Blog'}
-          link={'/blog'}
+          link={'https://medium.com/illiniblockchain'}
         />
         <PillarCard
           title={'Community'}

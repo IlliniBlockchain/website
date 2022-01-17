@@ -65,12 +65,12 @@ const Navbar = () => {
               <Link href='/projects' passHref>
                   <StyledLink>Projects</StyledLink>
               </Link>
-              <Link href='/blog' passHref>
+              <Link href='https://medium.com/illiniblockchain' passHref>
                   <StyledLink>Blogs</StyledLink>
               </Link>
             </div>
             <div>
-              <Link href='/contact' passHref>
+              <Link href='mailto:illiniblockchain@gmail.com' passHref>
                   <StyledLinkTwo> Contact Us</StyledLinkTwo>
               </Link>
             </div>
