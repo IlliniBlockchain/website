@@ -31,9 +31,9 @@ const Navbar = () => {
                     <Link href='/projects' passHref>
                         <MobileStyledLink>Projects</MobileStyledLink>
                     </Link>
-                    <Link href='https://medium.com/illiniblockchain' passHref>
+                    <a href='https://medium.com/illiniblockchain' target="_blank" rel="noreferrer">
                         <MobileStyledLink>Blogs</MobileStyledLink>
-                    </Link>
+                    </a>
                     <Link href='mailto:illiniblockchain@gmail.com' passHref>
                         <MobileStyledLink> Contact Us</MobileStyledLink>
                     </Link>
@@ -50,9 +50,9 @@ const Navbar = () => {
                     <Link href='/projects' passHref>
                         <StyledLink>Projects</StyledLink>
                     </Link>
-                    <Link href='https://medium.com/illiniblockchain' passHref>
+                    <a href='https://medium.com/illiniblockchain' target="_blank" rel="noreferrer">
                         <StyledLink>Blogs</StyledLink>
-                    </Link>
+                    </a>
                   </div>
                   <div>
                     <Link href='mailto:illiniblockchain@gmail.com' passHref>

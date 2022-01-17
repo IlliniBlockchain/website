@@ -96,7 +96,6 @@ display:none;
 `
 
 const LogoText = styled.div`
-display:none;
 
 @media only screen and (min-width: 650px) {
     display:inline;
@@ -112,7 +111,7 @@ align-items:center;
 margin-right:auto;
 whitespace:nowrap;
 @media only screen and (max-width: 650px) {
-    margin-left:0;
+    margin-left:auto;
 }
 `
 
