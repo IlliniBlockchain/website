@@ -20,6 +20,7 @@ white-space:nowrap;
 const StyledLink = styled.a`
 display:none;
 @media only screen and (min-width: 650px) {
+    display:inline;
     padding: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -54,11 +55,21 @@ const MobileNav = styled.div`
     margin-right: auto;
     font-size:2rem;
     margin-top:auto;
-    padding-top:3rem;
-    height:100vh;
-    background:white;
-    // width:100vw;
+    padding-top:4rem;
+    height:110vh;
+    // background:white;
+    width:200vw;
     // z-index:2;
+`
+
+const MobileBackground = styled.div`
+    position:absolute;
+    height:120vh;
+    width:120vw;
+    background:white;
+    z-index:-1;
+    left:-50px;
+    top:-50px;
 `
 
 const StyledLinkTwo = styled.a`
@@ -88,6 +99,7 @@ const LogoText = styled.div`
 display:none;
 
 @media only screen and (min-width: 650px) {
+    display:inline;
     font-size:1.5rem;
     padding:1rem;
 }
@@ -110,6 +122,9 @@ font-size:2rem;
     display:none;
 }
 
+&:active {
+    color:black;
+}
 `
 
 export { 
@@ -120,5 +135,6 @@ export {
     LogoText, 
     LogoLink, 
     MobileStyledLink,
-    MobileNav 
+    MobileNav,
+    MobileBackground 
 }

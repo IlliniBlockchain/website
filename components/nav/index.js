@@ -1,16 +1,22 @@
 import Link from 'next/link';
 import Image from 'next/image'
-import { Nav, StyledLink, StyledLinkTwo, IconWrapper, LogoText, LogoLink, MobileStyledLink, MobileNav } from './NavStyles';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { useState } from 'react';
+import { Nav, StyledLink, StyledLinkTwo, IconWrapper, LogoText, LogoLink, MobileStyledLink, MobileNav, MobileBackground } from './NavStyles';
+import { GiHamburgerMenu, GiExitDoor } from 'react-icons/gi';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
+  const router = useRouter();
   const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    setNav(false)
+  }, [router.pathname])
   
     return (
         <Nav>
             <Link href='/' passHref>
-              <LogoLink onClick={() => setNav(false)}>
+              <LogoLink>
                 <Image src="/blocks_transparent.png" width="50px" height="50px" layout="fixed"/>
                 <LogoText> ILLINI BLOCKCHAIN </LogoText>
               </LogoLink>
@@ -20,17 +26,19 @@ const Navbar = () => {
                 <>
                   <MobileNav>
                     <Link href='/about' passHref>
-                        <MobileStyledLink onClick={() => setNav(false)}>About Us</MobileStyledLink>
+                        <MobileStyledLink >About Us</MobileStyledLink>
                     </Link>
                     <Link href='/projects' passHref>
-                        <MobileStyledLink onClick={() => setNav(false)}>Projects</MobileStyledLink>
+                        <MobileStyledLink>Projects</MobileStyledLink>
                     </Link>
                     <Link href='https://medium.com/illiniblockchain' passHref>
-                        <MobileStyledLink onClick={() => setNav(false)}>Blogs</MobileStyledLink>
+                        <MobileStyledLink>Blogs</MobileStyledLink>
                     </Link>
                     <Link href='mailto:illiniblockchain@gmail.com' passHref>
-                        <MobileStyledLink onClick={() => setNav(false)}> Contact Us</MobileStyledLink>
+                        <MobileStyledLink> Contact Us</MobileStyledLink>
                     </Link>
+                    <MobileBackground/>
+
                   </MobileNav>
                 </>
                 :
@@ -54,7 +62,11 @@ const Navbar = () => {
                 </>
               }
             <IconWrapper>
-              <GiHamburgerMenu onClick={() => setNav(!nav)}/>
+              { nav ?
+                <GiExitDoor onClick={() => setNav(!nav)} style={{color:"black"}}/>
+                : 
+                <GiHamburgerMenu onClick={() => setNav(!nav)}/>
+              }
             </IconWrapper>
         </Nav>
     )
