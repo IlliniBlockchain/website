@@ -1,79 +1,73 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image'
-const Nav = styled.nav`
-padding-left: 1rem;
-margin-top:10px;
-height: 80px;
-color: #fff; 
-display: flex;
-justify-content: end;
-align-items: center;
-font-weight: bold;
-position:relative;
-z-index:1;
-white-space:nowrap;
-`
-
-const StyledLink = styled.a`
-padding: 2rem;
-padding-top: 10px;
-padding-bottom: 10px;
-  color: white;
-  border-radius: 50px;
-  &:hover {
-    color: black;
-    background: white;
-  }
-  font-weight: bold;
-`
-
-const StyledLinkTwo = styled.a`
-margin-right: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  background-color: #e84a27;
-  border-radius: 50px;
-  &:hover {
-    color: black;
-    background: white;
-  }
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-weight: bold;
-`
+import { Nav, StyledLink, StyledLinkTwo, IconWrapper, LogoText, LogoLink, MobileStyledLink, MobileNav, MobileBackground } from './NavStyles';
+import { GiHamburgerMenu, GiExitDoor } from 'react-icons/gi';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
+  const router = useRouter();
+  const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    setNav(false)
+  }, [router.pathname])
+  
     return (
         <Nav>
             <Link href='/' passHref>
-              <a style={{display:"flex", marginLeft:'40px', alignItems:"center", marginRight:"auto", whiteSpace:"nowrap"}}>
+              <LogoLink>
                 <Image src="/blocks_transparent.png" width="50px" height="50px" layout="fixed"/>
-                <div style={{fontSize:"1.5rem", padding:"1rem"}}> ILLINI BLOCKCHAIN </div>
-              </a>
+                <LogoText> ILLINI BLOCKCHAIN </LogoText>
+              </LogoLink>
             </Link>
-            <div>
 
+              { nav ? 
+                <>
+                  <MobileNav>
+                    <Link href='/about' passHref>
+                        <MobileStyledLink >About Us</MobileStyledLink>
+                    </Link>
+                    <Link href='/projects' passHref>
+                        <MobileStyledLink>Projects</MobileStyledLink>
+                    </Link>
+                    <a href='https://medium.com/illiniblockchain' target="_blank" rel="noreferrer">
+                        <MobileStyledLink>Blogs</MobileStyledLink>
+                    </a>
+                    <Link href='mailto:illiniblockchain@gmail.com' passHref>
+                        <MobileStyledLink> Contact Us</MobileStyledLink>
+                    </Link>
+                    <MobileBackground/>
 
-              <Link href='/about' passHref>
-                  <StyledLink>About Us</StyledLink>
-              </Link>
-              <Link href='/projects' passHref>
-                  <StyledLink>Projects</StyledLink>
-              </Link>
-              <Link href='https://medium.com/illiniblockchain' passHref>
-                  <StyledLink>Blogs</StyledLink>
-              </Link>
-            </div>
-            <div>
-              <Link href='mailto:illiniblockchain@gmail.com' passHref>
-                  <StyledLinkTwo> Contact Us</StyledLinkTwo>
-              </Link>
-            </div>
+                  </MobileNav>
+                </>
+                :
+                <>
+                  <div>
+                    <Link href='/about' passHref>
+                        <StyledLink>About Us</StyledLink>
+                    </Link>
+                    <Link href='/projects' passHref>
+                        <StyledLink>Projects</StyledLink>
+                    </Link>
+                    <a href='https://medium.com/illiniblockchain' target="_blank" rel="noreferrer">
+                        <StyledLink>Blogs</StyledLink>
+                    </a>
+                  </div>
+                  <div>
+                    <Link href='mailto:illiniblockchain@gmail.com' passHref>
+                        <StyledLinkTwo> Contact Us</StyledLinkTwo>
+                    </Link>
+                  </div>
+                </>
+              }
+            <IconWrapper>
+              { nav ?
+                <GiExitDoor onClick={() => setNav(!nav)} style={{color:"black"}}/>
+                : 
+                <GiHamburgerMenu onClick={() => setNav(!nav)}/>
+              }
+            </IconWrapper>
         </Nav>
     )
 }

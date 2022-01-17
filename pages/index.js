@@ -3,6 +3,7 @@ import {
   NewsletterBanner,
   LandingBanner,
   Pillars,
+  ApplyBanner,
 } from "../components/home";
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
 
       <LandingBanner />
       
+      <ApplyBanner/>
+
       <NewsletterBanner />
 
       <Pillars />
