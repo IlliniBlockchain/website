@@ -7,7 +7,7 @@ const ApplyBanner = () => {
   <ApplyBackground>
     <ApplyContainer>
         <ApplyHeader>Looking to join the team?</ApplyHeader>
-        <ApplySubheader>Learn more about how you can join the team and the roles we're looking for!</ApplySubheader>
+        <ApplySubheader>Learn more about how you can join the team and the roles we are looking for!</ApplySubheader>
     </ApplyContainer>
     <Link href='https://www.notion.so/illiniblockchain/Spring-2022-Recruitment-ff8e4c8165c54840bda5a77e4e95edbe' passHref>
       <ApplyButton>Apply</ApplyButton>
