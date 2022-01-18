@@ -17,6 +17,8 @@ const NewsletterContainer = styled.div`
 width: var(--global-width);
 margin-left:10%;
 position:relative;
+justify-content:center; 
+align-items:center; 
 `
 
 const NewsletterHeader = styled.h2`
