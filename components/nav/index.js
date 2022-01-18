@@ -18,7 +18,11 @@ const Navbar = () => {
             <Link href='/' passHref>
               <LogoLink>
                 <Image src="/blocks_transparent.png" width="50px" height="50px" layout="fixed"/>
-                <LogoText> ILLINI BLOCKCHAIN </LogoText>
+                {nav ?
+                  <></> :
+                  <LogoText> ILLINI BLOCKCHAIN </LogoText> 
+                }
+                
               </LogoLink>
             </Link>
 
