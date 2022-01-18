@@ -14,7 +14,7 @@ flex-direction:row;
 
 `
 const ApplyContainer = styled.div`
-width: var(--global-width);
+width: calc(var(--global-width) - 250px);
 margin-left:10%;
 margin-top:1rem;
 position:relative;
