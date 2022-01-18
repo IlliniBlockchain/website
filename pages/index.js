@@ -20,9 +20,9 @@ export default function Home() {
       
       <ApplyBanner/>
 
-      <NewsletterBanner />
-
       <Pillars />
+
+      <NewsletterBanner />
       
     </div>
   )
