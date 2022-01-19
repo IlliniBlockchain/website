@@ -14,7 +14,7 @@ font-family:Montserrat;
 `
 
 const FormContainer = styled.div`
-margin-right:10%;
+margin-right:15%;
 min-width:25%;
 align-self:center;
 padding:1rem;
@@ -39,7 +39,7 @@ border-width:0;
 color:white;
 font-family:Montserrat;
 font-weight:bold;
-border-radius: 0 10px 10px 0;
+border-radius: 0 1rem 1rem 0;
 padding: 10px 30px 10px 30px;
 align-self:center;
 cursor: pointer;

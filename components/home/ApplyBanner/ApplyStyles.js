@@ -52,18 +52,18 @@ width:80%;
 
 const ApplyButton = styled.a`
 width:fit-content;
-padding:.8rem;
+padding:10px 125px 10px 125px;
 border-width:0;
 border-radius:1rem;
-margin-bottom:1rem;
-margin-left: auto;
-margin-right: auto;
+margin-bottom:2rem;
+margin-top:2rem;
+margin-left:0rem;
+margin-right:10rem;
 white-space:nowrap;
 font-size:1.5rem;
 background:var(--orange);
 color:white;
 font-weight:bold;
-margin-top:1rem;
 font-family:Montserrat;
 `
 

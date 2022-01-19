@@ -24,6 +24,7 @@ display:none;
     padding: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-right:2rem;
     color: white;
     border-radius: 50px;
     &:hover {
@@ -40,6 +41,7 @@ const MobileStyledLink = styled.a`
 padding: 2rem;
 padding-top: 10px;
 padding-bottom: 10px;
+margin-right:2rem;
 color: black;
 border-radius: 50px;
 &:hover {
@@ -76,7 +78,7 @@ const StyledLinkTwo = styled.a`
 display:none;
 @media only screen and (min-width: 650px) {
 
-  margin-right: 100px;
+  margin-right:3rem;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;

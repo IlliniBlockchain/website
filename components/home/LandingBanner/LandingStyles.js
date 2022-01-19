@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+
+
 const LandingContainer = styled.div`
 width: 100%;
 height: 100vh;
@@ -15,28 +17,29 @@ position:relative;
 
 const LandingHeader = styled.h1`
 font-size: 4vmax;
-width:60%;
+width:100%;
 text-align: center;
 display:flex;
 position:relative;
 justify-content:center;
 align-items:center;
 font-weight: bold;
-margin-left:auto;
-margin-right:auto;
-margin-bottom:0;
+margin-left:0;
+margin-right:0;
+margin-bottom:1rem;
 margin-top:0;
 `
 
 const LandingSubheader = styled.h2`
-font-size: 2vmax;
-font-weight: normal;
-position:relative;
-margin-left:auto;
-margin-right:auto;
-margin-top: 0;
-width:60%;
+font-size:2vmax;
+width:80%;
 text-align:center;
+display:flex;
+position:relative;
+justify-content:center;
+align-items:center;
+align-self:center;
+font-weight: normal;
 `
 
 export {
