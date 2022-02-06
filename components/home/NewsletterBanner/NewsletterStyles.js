@@ -39,9 +39,27 @@ width:80%;
 
 `
 
+const NewsletterButton = styled.a`
+width:fit-content;
+padding:.8rem;
+border-width:0;
+border-radius:1rem;
+margin-bottom:1rem;
+margin-left: auto;
+margin-right: auto;
+white-space:nowrap;
+font-size:1.5rem;
+background:var(--navy-blue);
+color:white;
+font-weight:bold;
+margin-top:1rem;
+font-family:Montserrat;
+`
+
 export {
     NewsletterBackground,
     NewsletterContainer,
     NewsletterSubheader,
     NewsletterHeader,
+    NewsletterButton
 }
