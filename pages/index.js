@@ -5,6 +5,7 @@ import {
   Pillars,
   ApplyBanner,
 } from "../components/home";
+const recruitment = false;
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
 
       <LandingBanner />
       
-      <ApplyBanner/>
+      {recruitment ?
+        <ApplyBanner/> :
+        <></> 
+      }
 
       <NewsletterBanner />
 
