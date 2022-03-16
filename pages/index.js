@@ -5,7 +5,8 @@ import {
   Pillars,
   ApplyBanner,
 } from "../components/home";
-const recruitment = false;
+const recruitment = false; // change in GlobalStyle.js as well
+
 
 export default function Home() {
   return (
@@ -19,15 +20,20 @@ export default function Home() {
 
       <LandingBanner />
       
-      {recruitment ?
-        <ApplyBanner/> :
-        <></> 
+      {recruitment
+        ?
+        <>
+          <ApplyBanner/>
+          <Pillars />
+          <NewsletterBanner/> 
+        </>
+        :
+        <>
+          <NewsletterBanner/> 
+          <Pillars />
+        </>
       }
 
-      <NewsletterBanner />
-
-      <Pillars />
-      
     </div>
   )
 }

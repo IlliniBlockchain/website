@@ -3,20 +3,22 @@ import styled from "styled-components";
 const NewsletterBackground = styled.div`
 background-color: var(--orange);
 padding: 50px 0;
-top:-5.5rem;
+top: calc((var(--recruitment) * -1 + 1) * -5.5rem);
 position:relative;
 display:flex;
 flex-direction:row;
 
 @media only screen and (max-width: 1100px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
+}
 
 `
 const NewsletterContainer = styled.div`
 width: var(--global-width);
 margin-left:10%;
 position:relative;
+justify-content:center; 
+align-items:center; 
 `
 
 const NewsletterHeader = styled.h2`

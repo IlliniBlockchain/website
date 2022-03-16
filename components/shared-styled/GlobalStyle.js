@@ -14,6 +14,8 @@ html {
   --white: #fff;
   --orange: #e84a27;
   --footer-background: #181818;
+
+  --recruitment: 0;
 }
 
 @media only screen and (max-width: calc(1200px * 100 / 95)) {

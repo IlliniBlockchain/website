@@ -19,11 +19,12 @@ white-space:nowrap;
 
 const StyledLink = styled.a`
 display:none;
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 1100px) {
     display:inline;
     padding: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-right:2rem;
     color: white;
     border-radius: 50px;
     &:hover {
@@ -40,6 +41,7 @@ const MobileStyledLink = styled.a`
 padding: 2rem;
 padding-top: 10px;
 padding-bottom: 10px;
+margin-right:2rem;
 color: black;
 border-radius: 50px;
 &:hover {
@@ -74,9 +76,9 @@ const MobileBackground = styled.div`
 
 const StyledLinkTwo = styled.a`
 display:none;
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 1100px) {
 
-  margin-right: 100px;
+  margin-right:3rem;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -97,7 +99,7 @@ display:none;
 
 const LogoText = styled.div`
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 1100px) {
     display:inline;
     font-size:1.5rem;
     padding:1rem;
@@ -110,14 +112,14 @@ margin-left:40px;
 align-items:center;
 margin-right:auto;
 whitespace:nowrap;
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1100px) {
     margin-left:auto;
 }
 `
 
 const IconWrapper = styled.div`
 font-size:2rem;
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 1100px) {
     display:none;
 }
 

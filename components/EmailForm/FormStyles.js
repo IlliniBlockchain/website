@@ -4,7 +4,7 @@ const FormInput = styled.input`
 border-width:0;
 height:100%;
 border-radius: 10px 0 0 10px;
-padding:.5rem;
+padding: 10px 10px 10px 20px;
 width:20rem;
 font-family:Montserrat;
 @media only screen and (max-width: 1100px) {
@@ -14,11 +14,13 @@ font-family:Montserrat;
 `
 
 const FormContainer = styled.div`
-margin-right:10%;
+margin-right:15%;
 min-width:25%;
 align-self:center;
 padding:1rem;
 width:fit-content;
+justify-content:center; 
+align-items:center; 
 
 @media only screen and (max-width: 1100px) {
     margin-right:5%;
@@ -37,8 +39,8 @@ border-width:0;
 color:white;
 font-family:Montserrat;
 font-weight:bold;
-border-radius: 0 5px 5px 0;
-padding:.5rem;
+border-radius: 0 1rem 1rem 0;
+padding: 10px 30px 10px 30px;
 align-self:center;
 cursor: pointer;
 height:3rem;

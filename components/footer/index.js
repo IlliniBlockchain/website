@@ -13,14 +13,13 @@ import {
 	FooterLinksSectionContainer,
 	FooterSocialsContainer
 } from './FooterStyles';
+import NewsletterBanner from "../home/NewsletterBanner"
 
 
 const Footer = () => {
 	return (
-
 		<FooterSection>
 			<FooterContainer>
-
 				<FooterLeftContainer>
 
 					<FooterLogoContainer>
