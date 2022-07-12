@@ -1,5 +1,16 @@
 html,
 body {
+  /* Global Variables */
+  --global-width: 1200px;
+  --global-width-mobile: 100;
+  --background-color: #202020;
+  --dark-text-color: black;
+  --light-text-color: white;
+  --navy-blue: #002855;
+  --white: #fff;
+  --orange: #e84a27;
+  --footer-background: #181818;
+  
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
