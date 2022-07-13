@@ -69,6 +69,8 @@ const FooterBottomContainer = styled.div`
   justify-content: space-around;
   @media only screen and (max-width: calc(1200px * 100 / 95)) {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -80,6 +82,12 @@ const FooterSponsorsContainer = styled.div`
   margin-top: 45px;
   h4 {
     margin: 0;
+  }
+  @media only screen and (max-width: calc(1200px * 100 / 95)) {
+    flex-direction: column;
+    height: 75px;
+    margin-top: 15px;
+    align-items: center;
   }
 `;
 
