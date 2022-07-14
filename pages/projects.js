@@ -36,7 +36,7 @@ export default function Projects() {
           githubUrl={"https://github.com/IlliniBlockchain/buoyant"}
           websiteUrl={"https://buoyantprotocol.xyz"}
           description={
-            "Buoyant is a tradable subscriptions protocol on Solana. The idea is that a normal subscription to something like Netflix or Spotify could be a transferrable digital asset. Someone who wanted to unsubscribe after 20 days of a month-long subscription could sell it to someone looking for a 10-day trial for less. We submitted to Solana's Riptide Hackathon, and ended up being include in Grape Protocol's final list considering open source protocols for a community prize. Deployed only to devnet currently."
+            "Buoyant is a tradable subscriptions protocol on Solana. The idea is that a normal subscription to something like Netflix or Spotify could be a transferrable digital asset. Someone who wanted to unsubscribe after 20 days of a month-long subscription could sell it to someone looking for a 10-day trial for less. We submitted to Solana's Riptide Hackathon, and ended up being included in Grape Protocol's final list considering open source protocols for a community prize. Deployed only to devnet currently."
           }
         />
         <Project

@@ -1,35 +1,141 @@
-import Head from 'next/head'
+import Head from "next/head";
 import {
   MembersContainer,
   SectionTitle,
-  Container
-} from '../components/shared-styled'
-import {Member} from '../components/about-us'
-import InfoBanner from '../components/about-us/InfoBanner'
+  Container,
+} from "../components/shared-styled";
+import { Member } from "../components/about-us";
+import InfoBanner from "../components/about-us/InfoBanner";
 
 export default function AboutUs() {
-    return (
-      <Container>
-        <Head>
-          <title>About Us</title>
-          <meta name="About Us - Illini Blockchain" content="About the Illini Blockchain Team" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <InfoBanner></InfoBanner>
-        <SectionTitle>Team</SectionTitle>
-        <MembersContainer>
-          <Member name="Zayyan Faizal" image="/headshots/zayyan_faizal.jpg" twitter="brownmanwonders" linkedinURL="https://www.linkedin.com/in/zayyanfaizal" />
-          <Member name="Luke Clancy" image="/headshots/luke_clancy.jpg" twitter="luke_clancy1" linkedinURL="https://www.linkedin.com/in/luke-clancy-a88812191/"/>
-          <Member name="Alec Chen" image="/headshots/alec_chen.jpeg" twitter="alecchendev" linkedinURL="https://www.linkedin.com/in/alecchendev/"/>
-          <Member name="Danny Koch" image="/headshots/danny_koch.JPG" twitter="Danny_Koch13" linkedinURL="https://www.linkedin.com/in/dannykoch/"/>
-          <Member name="Amaan Sameer" image="/headshots/amaan_sameer.jpg" twitter="AmaanSameer3" linkedinURL="https://www.linkedin.com/in/amaan-sameer-68917a180/"/>
-          <Member name="Zhengyu Li" image="/headshots/zhengyu_li.png" twitter="Zhengyu76252961" linkedinURL="https://www.linkedin.com/in/zhengyu-li-588391125/"/>
-          <Member name="Rohan Bindu" image="/headshots/rohan_bindu.jpg" twitter="romoney0" linkedinURL="https://www.linkedin.com/in/rohan-bindu/"/>
-          <Member name="Rohan Hirani" image="/headshots/rohan_hirani.jpeg" twitter="rohan_hirani7" linkedinURL="https://linkedin.com/in/rohan-hirani"/>
-          <Member name="Adrian Petrykiw" image="/headshots/adrian_petrykiw.jpg" twitter="petrykiw" linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"/>
-          <Member name="Varun Siva" image="/headshots/varun_siva.jpg" twitter="VarunSiva14"/>
-
-        </MembersContainer>
-      </Container>
-    )
-  }
+  return (
+    <Container>
+      <Head>
+        <title>About Us</title>
+        <meta
+          name="About Us - Illini Blockchain"
+          content="About the Illini Blockchain Team"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <InfoBanner></InfoBanner>
+      <SectionTitle>Team</SectionTitle>
+      <MembersContainer>
+        <Member
+          name="Zayyan Faizal"
+          image="/headshots/zayyan_faizal.jpg"
+          twitter="brownmanwonders"
+          linkedinURL="https://www.linkedin.com/in/zayyanfaizal"
+        />
+        <Member
+          name="Luke Clancy"
+          image="/headshots/luke_clancy.jpg"
+          twitter="luke_clancy1"
+          linkedinURL="https://www.linkedin.com/in/luke-clancy-a88812191/"
+        />
+        <Member
+          name="Alec Chen"
+          image="/headshots/alec_chen.jpeg"
+          twitter="alecchendev"
+          linkedinURL="https://www.linkedin.com/in/alecchendev/"
+        />
+        <Member
+          name="Danny Koch"
+          image="/headshots/danny_koch.JPG"
+          twitter="Danny_Koch13"
+          linkedinURL="https://www.linkedin.com/in/dannykoch/"
+        />
+        <Member
+          name="Amaan Sameer"
+          image="/headshots/amaan_sameer.jpg"
+          twitter="AmaanSameer3"
+          linkedinURL="https://www.linkedin.com/in/amaan-sameer-68917a180/"
+        />
+        <Member
+          name="Zhengyu Li"
+          image="/headshots/zhengyu_li.png"
+          twitter="Zhengyu76252961"
+          linkedinURL="https://www.linkedin.com/in/zhengyu-li-588391125/"
+        />
+        <Member
+          name="Rohan Bindu"
+          image="/headshots/rohan_bindu.jpg"
+          twitter="romoney0"
+          linkedinURL="https://www.linkedin.com/in/rohan-bindu/"
+        />
+        <Member
+          name="Rohan Hirani"
+          image="/headshots/rohan_hirani.jpeg"
+          twitter="rohan_hirani7"
+          linkedinURL="https://linkedin.com/in/rohan-hirani"
+        />
+        <Member
+          name="Adrian Petrykiw"
+          image="/headshots/adrian_petrykiw.jpg"
+          twitter="petrykiw"
+          linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"
+        />
+        <Member
+          name="Varun Siva"
+          image="/headshots/varun_siva.jpg"
+          twitter="VarunSiva14"
+          linkedinURL="https://www.linkedin.com/in/varun-siva-b6275b22a"
+        />
+        <Member
+          name="Arman Rafati"
+          image="/headshots/arman_rafati.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/armanrafati/"
+        />
+        <Member
+          name="Muskan Bhatla"
+          image="/headshots/muskan_bhatla.jpg"
+          twitter="https://twitter.com/muskanbhatla"
+          linkedinURL="www.linkedin.com/in/muskanbhatla"
+        />
+        <Member
+          name="Kevin Zhang"
+          image="/headshots/kevin_zhang.jpg"
+          twitter="https://twitter.com/bloobearr"
+          linkedinURL="https://www.linkedin.com/in/kevnzhang/"
+        />
+        <Member
+          name="Joe Morgan"
+          image="/headshots/joe_morgan.jpg"
+          twitter="https://twitter.com/_Bok_Choy"
+          linkedinURL="https://www.linkedin.com/in/joe-morgan-03293521a/"
+        />
+        <Member
+          name="Javier Nieto"
+          image="/headshots/javier_nieto.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/javier-m-nieto/"
+        />
+        <Member
+          name="Larry Peng"
+          image="/headshots/larry_peng.png"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/larrylp2/"
+        />
+        <Member
+          name="Jongwon Park"
+          image="/headshots/jongwon_park.jpg"
+          twitter="https://twitter.com/jwpark02"
+          linkedinURL="https://linkedin.com/in/jongwonpark"
+        />
+        <Member
+          name="Aniketh Chedalla"
+          image="/IlliniBlockchainLogoDarkMode.png"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/aniketh-chedalla-9b33221b0/"
+        />
+        <Member
+          name="Zach Bottoms"
+          image="/IlliniBlockchainLogoDarkMode.png"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/zach-bottoms-1130341ba/"
+        />
+      </MembersContainer>
+    </Container>
+  );
+}
