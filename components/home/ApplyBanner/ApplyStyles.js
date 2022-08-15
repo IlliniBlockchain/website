@@ -46,7 +46,7 @@ width:80%;
 
 const ApplyButton = styled.a`
 width:fit-content;
-padding:10px 125px 10px 125px;
+padding:10px 75px;
 border-width:0;
 border-radius:1rem;
 margin-bottom:2rem;
@@ -59,6 +59,9 @@ background:var(--orange);
 color:white;
 font-weight:bold;
 font-family:Montserrat;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 @media only screen and (max-width: 1100px) {
   margin: 25px auto;

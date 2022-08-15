@@ -1,16 +1,17 @@
 import Head from 'next/head'
 import {
+  HomeContainer,
   NewsletterBanner,
   LandingBanner,
   Pillars,
   ApplyBanner,
 } from "../components/home";
-const recruitment = false; // change in GlobalStyle.js as well
+const recruitment = true; // change in GlobalStyle.js as well
 
 
 export default function Home() {
   return (
-    <div>
+    <HomeContainer>
       <Head>
         <title>Illini Blockchain</title>
         <meta name="description" content="University of Illinois' premier student blockchain organization,
@@ -34,6 +35,6 @@ export default function Home() {
         </>
       }
 
-    </div>
+    </HomeContainer>
   )
 }

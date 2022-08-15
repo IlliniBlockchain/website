@@ -22,12 +22,6 @@ export default function AboutUs() {
       <SectionTitle>Team</SectionTitle>
       <MembersContainer>
         <Member
-          name="Zayyan Faizal"
-          image="/headshots/zayyan_faizal.jpg"
-          twitter="brownmanwonders"
-          linkedinURL="https://www.linkedin.com/in/zayyanfaizal"
-        />
-        <Member
           name="Luke Clancy"
           image="/headshots/luke_clancy.jpg"
           twitter="luke_clancy1"
@@ -52,28 +46,10 @@ export default function AboutUs() {
           linkedinURL="https://www.linkedin.com/in/amaan-sameer-68917a180/"
         />
         <Member
-          name="Zhengyu Li"
-          image="/headshots/zhengyu_li.png"
-          twitter="Zhengyu76252961"
-          linkedinURL="https://www.linkedin.com/in/zhengyu-li-588391125/"
-        />
-        <Member
-          name="Rohan Bindu"
-          image="/headshots/rohan_bindu.jpg"
-          twitter="romoney0"
-          linkedinURL="https://www.linkedin.com/in/rohan-bindu/"
-        />
-        <Member
           name="Rohan Hirani"
           image="/headshots/rohan_hirani.jpeg"
           twitter="rohan_hirani7"
           linkedinURL="https://linkedin.com/in/rohan-hirani"
-        />
-        <Member
-          name="Adrian Petrykiw"
-          image="/headshots/adrian_petrykiw.jpg"
-          twitter="petrykiw"
-          linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"
         />
         <Member
           name="Varun Siva"
@@ -136,6 +112,24 @@ export default function AboutUs() {
           linkedinURL="https://www.linkedin.com/in/zach-bottoms-1130341ba/"
         />
       </MembersContainer>
+
+
+      <SectionTitle>Alumni</SectionTitle>
+      <MembersContainer>
+        <Member
+          name="Zayyan Faizal"
+          image="/headshots/zayyan_faizal.jpg"
+          twitter="brownmanwonders"
+          linkedinURL="https://www.linkedin.com/in/zayyanfaizal"
+        />
+        <Member
+          name="Adrian Petrykiw"
+          image="/headshots/adrian_petrykiw.jpg"
+          twitter="petrykiw"
+          linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"
+        />
+      </MembersContainer>
+
     </Container>
   );
 }
