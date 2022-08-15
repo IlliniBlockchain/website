@@ -4,6 +4,7 @@ import {
   InfoDescription,
   InfoLeftContainer,
   InfoTeamImageContainer,
+  InfoLink
 } from "./InfoStyles";
 import Image from "next/image";
 export default function InfoBanner(props) {
@@ -30,7 +31,7 @@ export default function InfoBanner(props) {
           have the ability to be at the forefront of the industry. Our aim is to
           foster the blockchain ecosystem on campus for everyone interested,
           helping people learn the technology and applications, building
-          projects, and engaging in research.
+          projects, and engaging in research. Learn more <InfoLink target="_blank" href="https://www.notion.so/illiniblockchain/Illini-Blockchain-Public-ac1f93f3ad984e3fa00ce6a42c69b335">here.</InfoLink>
         </InfoDescription>
       </InfoBackground>
     </>

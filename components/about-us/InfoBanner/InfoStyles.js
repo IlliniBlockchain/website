@@ -70,10 +70,15 @@ const InfoDescription = styled.div`
   }
 `;
 
+const InfoLink = styled.a`
+color: var(--orange);
+`
+
 export {
   InfoBackground,
   InfoTitle,
   InfoDescription,
   InfoLeftContainer,
   InfoTeamImageContainer,
+  InfoLink,
 };
