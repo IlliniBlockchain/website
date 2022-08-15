@@ -18,8 +18,8 @@ const Pillars = () => {
           through a collection of blogs, tweets,\
           roundtable discussions, and educational events. '}
           pillar={'education'}
-          cta={'Read Our Blog'}
-          link={'https://medium.com/illiniblockchain'}
+          cta={'Start learning here'}
+          link={'https://illiniblockchain.notion.site/web3-Starter-Pack-66bf4bd20bca4d26958cf78af57d379d'}
         />
         <PillarCard
           title={'Community'}

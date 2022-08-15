@@ -14,7 +14,7 @@ const PillarCard = ({ title, description, pillar, icon, cta, link }) => (
     <PillarIcon>{icon}</PillarIcon>
     <PillarDescription>{description}</PillarDescription>
     <Link href={link} passHref>
-      <PillarButton>{cta}</PillarButton>
+      <PillarButton target="_blank">{cta}</PillarButton>
     </Link>
   </PillarCardContainer>
 )
