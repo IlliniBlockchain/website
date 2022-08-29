@@ -37,6 +37,11 @@ const FooterLogoContainer = styled.div`
 
   @media only screen and (max-width: calc(1200px * 100 / 95)) {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -52,8 +57,9 @@ const FooterLinksContainer = styled.div`
   justify-content: space-between;
   margin: 0;
   @media only screen and (max-width: calc(1200px * 100 / 95)) {
-    width: 100%;
+    width: 90%;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 `;
 

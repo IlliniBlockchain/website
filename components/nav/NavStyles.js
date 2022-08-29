@@ -108,12 +108,13 @@ const LogoText = styled.div`
 
 const LogoLink = styled.a`
 display:flex;
-margin-left:40px;
+margin-left: 40px;
+margin-right: auto;
 align-items:center;
-margin-right:auto;
-whitespace:nowrap;
+justify-content: space-between;
 @media only screen and (max-width: 1100px) {
-    margin-left:auto;
+    margin: auto;
+    width: 230px;
 }
 `
 

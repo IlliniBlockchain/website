@@ -1,58 +1,53 @@
 import styled from "styled-components";
 
-const ApplyBackground = styled.div`
+const BannerBackground = styled.div`
 background-color: var(--navy-blue);
 padding: 50px 0;
 top: -5.5rem;
 position:relative;
 display:flex;
 flex-direction:row;
+justify-content: space-around;
 
 @media only screen and (max-width: 1100px) {
     flex-direction: column;
   }
 
 `
-const ApplyContainer = styled.div`
-width: calc(var(--global-width) - 250px);
-margin-left:10%;
-margin-top:1rem;
-position:relative;
+const BannerContainer = styled.div`
+width: 50%;
 @media only screen and (max-width:1100px) {
   margin: auto;
+  width: 80%;
 }
 `
 
-const ApplyHeader = styled.h2`
+const BannerHeader = styled.h2`
 font-size: 1.8rem;
 margin: 0;
-width:70%;
 @media only screen and (max-width: 1100px) {
     margin:auto;
-    width:80%;
     text-align:center;
 }
 `
-const ApplySubheader = styled.h3`
+const BannerSubheader = styled.h3`
 font-size: 1.2rem;
 margin: 0;
 font-weight: normal;
-width:80%;
 @media only screen and (max-width: 1100px) {
   text-align:center;
   margin:auto;
 }
 `
 
-const ApplyButton = styled.a`
+const BannerButton = styled.a`
 width:fit-content;
-padding:10px 75px;
+height: fit-content;
+margin-top: auto;
+margin-bottom: auto;
+padding:10px 50px;
 border-width:0;
 border-radius:1rem;
-margin-bottom:2rem;
-margin-top:2rem;
-margin-left:0rem;
-margin-right:10rem;
 white-space:nowrap;
 font-size:1.5rem;
 background:var(--orange);
@@ -69,9 +64,9 @@ justify-content: center;
 `
 
 export {
-    ApplyBackground,
-    ApplyContainer,
-    ApplySubheader,
-    ApplyHeader,
-    ApplyButton
+    BannerBackground,
+    BannerContainer,
+    BannerSubheader,
+    BannerHeader,
+    BannerButton
 }
