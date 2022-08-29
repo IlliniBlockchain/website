@@ -20,7 +20,6 @@ import {
   FooterSponsorImageContainer,
   FooterSocialsContainer,
 } from "./FooterStyles";
-import NewsletterBanner from "../home/NewsletterBanner";
 
 const Footer = () => {
   return (

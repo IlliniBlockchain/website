@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import {
   HomeContainer,
-  NewsletterBanner,
   LandingBanner,
   Pillars,
-  ApplyBanner,
-  ThinBanner
+  ThinBanner,
+  People
 } from "../components/home";
 const recruitment = true; // change in GlobalStyle.js as well
 
@@ -32,6 +31,7 @@ export default function Home() {
             buttonLink="https://www.notion.so/illiniblockchain/Fall-2022-Recruitment-ff8e4c8165c54840bda5a77e4e95edbe"
           />
           <Pillars />
+          <People />
           <ThinBanner
             header="Sign up for our newsletter!"
             subtitle="Receive the latest updates on everything Illini Blockchain"
@@ -41,8 +41,14 @@ export default function Home() {
         </>
         :
         <>
-          <NewsletterBanner/> 
+          <ThinBanner
+            header="Sign up for our newsletter!"
+            subtitle="Receive the latest updates on everything Illini Blockchain"
+            buttonText="Sign up"
+            buttonLink="https://forms.gle/TisDoiaNfD2ZoRes8"
+          />
           <Pillars />
+          <People />
         </>
       }
 
