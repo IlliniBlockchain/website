@@ -11,8 +11,8 @@ const PartnerBanner = ({ partnerLogoPaths }) => (
   </SectionTitle>
   <PartnerLogoContainer>
     {
-      partnerLogoPaths.map(partnerLogoPath => (
-        <PartnerLogoWrapper>
+      partnerLogoPaths.map((partnerLogoPath, i) => (
+        <PartnerLogoWrapper key={i} >
           <Image src={partnerLogoPath} layout="fill" objectFit='contain'/>
         </PartnerLogoWrapper>
       ))
