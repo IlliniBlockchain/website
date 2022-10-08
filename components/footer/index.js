@@ -157,7 +157,7 @@ const Footer = () => {
             </a>
           </FooterSocialsContainer>
 
-          <FooterSponsorsContainer>
+          {/* <FooterSponsorsContainer>
             <h4>Sponsors</h4>
             <FooterSponsorImageContainer>
               <Image
@@ -167,7 +167,7 @@ const Footer = () => {
                 height={50}
               />
             </FooterSponsorImageContainer>
-          </FooterSponsorsContainer>
+          </FooterSponsorsContainer> */}
         </FooterBottomContainer>
       </FooterContainer>
     </FooterSection>

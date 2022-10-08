@@ -2,11 +2,12 @@ import Head from 'next/head'
 import {
   HomeContainer,
   LandingBanner,
+  PartnerBanner,
   Pillars,
   ThinBanner,
   People
 } from "../components/home";
-const recruitment = true; // change in GlobalStyle.js as well
+const recruitment = false; // change in GlobalStyle.js as well
 
 
 export default function Home() {
@@ -20,6 +21,15 @@ export default function Home() {
       </Head>
 
       <LandingBanner />
+
+      <PartnerBanner
+        partnerLogoPaths={[
+          '/partnerLogos/solanaLogo.png',
+          '/partnerLogos/nearLogo.png',
+          '/partnerLogos/binanceLogo.png',
+          '/partnerLogos/bafLogo.png'
+        ]}
+      />
       
       {recruitment
         ?
