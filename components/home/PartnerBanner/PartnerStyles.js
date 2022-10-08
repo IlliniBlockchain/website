@@ -18,12 +18,12 @@ align-items: center;
 `
 
 const PartnerLogoWrapper = styled.div`
-margin: 10px auto;
+margin: auto;
 position: relative;
 width: 250px;
 height: auto;
 
-aspect-ratio: 2/1;
+aspect-ratio: 2.2/1;
 overflow: hidden;
 `
 
