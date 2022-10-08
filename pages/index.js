@@ -6,7 +6,7 @@ import {
   ThinBanner,
   People
 } from "../components/home";
-const recruitment = true; // change in GlobalStyle.js as well
+const recruitment = false; // change in GlobalStyle.js as well
 
 
 export default function Home() {
