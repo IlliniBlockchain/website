@@ -3,7 +3,7 @@ import styled from "styled-components";
 const BannerBackground = styled.div`
 background-color: var(--navy-blue);
 padding: 50px 0;
-top: -5.5rem;
+top: -5rem;
 position:relative;
 display:flex;
 flex-direction:row;

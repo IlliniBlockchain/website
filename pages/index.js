@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {
   HomeContainer,
   LandingBanner,
+  PartnerBanner,
   Pillars,
   ThinBanner,
   People
@@ -20,6 +21,15 @@ export default function Home() {
       </Head>
 
       <LandingBanner />
+
+      <PartnerBanner
+        partnerLogoPaths={[
+          '/partnerLogos/solanaLogo.png',
+          '/partnerLogos/nearLogo.png',
+          '/partnerLogos/binanceLogo.png',
+          '/partnerLogos/bafLogo.png'
+        ]}
+      />
       
       {recruitment
         ?
