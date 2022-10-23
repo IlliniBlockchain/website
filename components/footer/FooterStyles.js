@@ -102,7 +102,7 @@ const FooterSponsorImageContainer = styled.div`
 `;
 
 const FooterSocialsContainer = styled.div`
-  width: 200px;
+  width: 250px;
   margin-top: 45px;
   font-size: 2rem;
   display: flex;

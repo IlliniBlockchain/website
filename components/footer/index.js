@@ -4,6 +4,7 @@ import {
   AiFillMediumSquare,
   AiFillGithub,
 } from "react-icons/ai";
+import { SiLinktree } from 'react-icons/si'
 import { FaDiscord } from "react-icons/fa";
 import { SiNotion } from "react-icons/si";
 import Image from "next/image";
@@ -154,6 +155,13 @@ const Footer = () => {
               rel="noreferrer"
             >
               <AiFillGithub />
+            </a>
+            <a
+              href="https://linktr.ee/illiniblockchain"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiLinktree />
             </a>
           </FooterSocialsContainer>
 
