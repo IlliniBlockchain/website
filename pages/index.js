@@ -55,7 +55,7 @@ export default function Home() {
             header="Sign up for our newsletter!"
             subtitle="Receive the latest updates on everything Illini Blockchain"
             buttonText="Sign up"
-            buttonLink="https://forms.gle/TisDoiaNfD2ZoRes8"
+            buttonLink="https://ibupdates.substack.com/"
           />
           <Pillars />
           <People />
