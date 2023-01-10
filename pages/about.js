@@ -101,7 +101,7 @@ export default function AboutUs() {
         />
         <Member
           name="Aniketh Chedalla"
-          image="/IlliniBlockchainLogoDarkMode.png"
+          image="/headshots/aniketh.jpg"
           twitter=""
           linkedinURL="https://www.linkedin.com/in/aniketh-chedalla-9b33221b0/"
         />
@@ -111,7 +111,6 @@ export default function AboutUs() {
           twitter=""
           linkedinURL="https://www.linkedin.com/in/zach-bottoms-1130341ba/"
         />
-
         <Member
           name="Antony Silvetti-Schmitt"
           image="/headshots/antony_silvettischmitt.jpg"
@@ -126,10 +125,12 @@ export default function AboutUs() {
           linkedinURL="https://www.linkedin.com/in/saumya-madhan-a256831a2/"
         />
 
-
-
-
-
+        <Member
+          name="Samir Sheikh"
+          image="/headshots/samir_sheikh.png"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/samirksheikh/"
+        />
 
       </MembersContainer>
 
