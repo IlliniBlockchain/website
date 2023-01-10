@@ -35,7 +35,7 @@ export default function AboutUs() {
         />
         <Member
           name="Danny Koch"
-          image="/headshots/danny_koch.JPG"
+          image="/headshots/danny_koch.jpeg"
           twitter="Danny_Koch13"
           linkedinURL="https://www.linkedin.com/in/dannykoch/"
         />
@@ -107,10 +107,30 @@ export default function AboutUs() {
         />
         <Member
           name="Zach Bottoms"
-          image="/IlliniBlockchainLogoDarkMode.png"
+          image="/headshots/zach_bottoms.jpg"
           twitter=""
           linkedinURL="https://www.linkedin.com/in/zach-bottoms-1130341ba/"
         />
+
+        <Member
+          name="Antony Silvetti-Schmitt"
+          image="/headshots/antony_silvettischmitt.jpg"
+          twitter="https://twitter.com/Johann_Antony"
+          linkedinURL="https://www.linkedin.com/in/antony-silvetti-schmitt/"
+        />
+
+        <Member
+          name="Sam Madhan"
+          image="/headshots/sam_madhan.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/saumya-madhan-a256831a2/"
+        />
+
+
+
+
+
+
       </MembersContainer>
 
 
@@ -122,12 +142,16 @@ export default function AboutUs() {
           twitter="brownmanwonders"
           linkedinURL="https://www.linkedin.com/in/zayyanfaizal"
         />
+
         <Member
           name="Adrian Petrykiw"
           image="/headshots/adrian_petrykiw.jpg"
           twitter="petrykiw"
           linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"
         />
+
+        
+
       </MembersContainer>
 
     </Container>
