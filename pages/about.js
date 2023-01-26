@@ -117,21 +117,24 @@ export default function AboutUs() {
           twitter="https://twitter.com/Johann_Antony"
           linkedinURL="https://www.linkedin.com/in/antony-silvetti-schmitt/"
         />
-
         <Member
           name="Sam Madhan"
           image="/headshots/sam_madhan.jpg"
           twitter=""
           linkedinURL="https://www.linkedin.com/in/saumya-madhan-a256831a2/"
         />
-
         <Member
           name="Samir Sheikh"
           image="/headshots/samir_sheikh.png"
           twitter=""
           linkedinURL="https://www.linkedin.com/in/samirksheikh/"
         />
-
+        <Member
+          name="Manas Gandhi"
+          image="/headshots/manas.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/manas-gandhi-358827199/"
+        />
       </MembersContainer>
 
 
