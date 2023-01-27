@@ -5,7 +5,7 @@ margin:5px;
 
 text-align: center;
 font-weight: bold;
-font-size: 1.1rem
+font-size: 1.05rem
 `
 
 export default Nametag

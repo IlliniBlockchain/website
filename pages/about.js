@@ -111,12 +111,13 @@ export default function AboutUs() {
           twitter=""
           linkedinURL="https://www.linkedin.com/in/zach-bottoms-1130341ba/"
         />
+
         <Member
           name="Antony Silvetti-Schmitt"
-          image="/headshots/antony_silvettischmitt.jpg"
+          image="/headshots/antonysilvettischmitt.jpg"
           twitter="https://twitter.com/Johann_Antony"
           linkedinURL="https://www.linkedin.com/in/antony-silvetti-schmitt/"
-        />
+          />
         <Member
           name="Sam Madhan"
           image="/headshots/sam_madhan.jpg"
@@ -135,6 +136,19 @@ export default function AboutUs() {
           twitter=""
           linkedinURL="https://www.linkedin.com/in/manas-gandhi-358827199/"
         />
+        <Member
+          name="Kevin Choe"
+          image="/headshots/kcho.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/kevinchoe/"
+        />
+        <Member
+          name="Saksyam Patro"
+          image="/headshots/saksyam.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/kevinchoe/"
+        />
+        
       </MembersContainer>
 
 
