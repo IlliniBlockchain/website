@@ -146,7 +146,14 @@ export default function AboutUs() {
           name="Saksyam Patro"
           image="/headshots/saksyam.jpg"
           twitter=""
-          linkedinURL="https://www.linkedin.com/in/kevinchoe/"
+          linkedinURL="https://www.linkedin.com/in/sakshyampatro/"
+        />
+
+          <Member
+          name="Aadi Mukherjee"
+          image="/headshots/aadi.jpg"
+          twitter="https://twitter.com/aadi_mukherjee"
+          linkedinURL="https://www.linkedin.com/in/aadimukherjee/"
         />
         
       </MembersContainer>
