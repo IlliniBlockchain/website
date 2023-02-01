@@ -35,7 +35,7 @@ export default function AboutUs() {
         />
         <Member
           name="Danny Koch"
-          image="/headshots/danny_koch.JPG"
+          image="/headshots/danny_koch.jpeg"
           twitter="Danny_Koch13"
           linkedinURL="https://www.linkedin.com/in/dannykoch/"
         />
@@ -101,16 +101,61 @@ export default function AboutUs() {
         />
         <Member
           name="Aniketh Chedalla"
-          image="/IlliniBlockchainLogoDarkMode.png"
+          image="/headshots/aniketh.jpg"
           twitter=""
           linkedinURL="https://www.linkedin.com/in/aniketh-chedalla-9b33221b0/"
         />
         <Member
           name="Zach Bottoms"
-          image="/IlliniBlockchainLogoDarkMode.png"
+          image="/headshots/zach_bottoms.jpg"
           twitter=""
           linkedinURL="https://www.linkedin.com/in/zach-bottoms-1130341ba/"
         />
+
+        <Member
+          name="Antony Silvetti-Schmitt"
+          image="/headshots/antonysilvettischmitt.jpg"
+          twitter="https://twitter.com/Johann_Antony"
+          linkedinURL="https://www.linkedin.com/in/antony-silvetti-schmitt/"
+          />
+        <Member
+          name="Sam Madhan"
+          image="/headshots/sam_madhan.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/saumya-madhan-a256831a2/"
+        />
+        <Member
+          name="Samir Sheikh"
+          image="/headshots/samir_sheikh.png"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/samirksheikh/"
+        />
+        <Member
+          name="Manas Gandhi"
+          image="/headshots/manas.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/manas-gandhi-358827199/"
+        />
+        <Member
+          name="Kevin Choe"
+          image="/headshots/kcho.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/kevinchoe/"
+        />
+        <Member
+          name="Saksyam Patro"
+          image="/headshots/saksyam.jpg"
+          twitter=""
+          linkedinURL="https://www.linkedin.com/in/sakshyampatro/"
+        />
+
+          <Member
+          name="Aadi Mukherjee"
+          image="/headshots/aadi.jpg"
+          twitter="https://twitter.com/aadi_mukherjee"
+          linkedinURL="https://www.linkedin.com/in/aadimukherjee/"
+        />
+        
       </MembersContainer>
 
 
@@ -122,12 +167,16 @@ export default function AboutUs() {
           twitter="brownmanwonders"
           linkedinURL="https://www.linkedin.com/in/zayyanfaizal"
         />
+
         <Member
           name="Adrian Petrykiw"
           image="/headshots/adrian_petrykiw.jpg"
           twitter="petrykiw"
           linkedinURL="https://www.linkedin.com/in/adrianpetrykiw/"
         />
+
+        
+
       </MembersContainer>
 
     </Container>
